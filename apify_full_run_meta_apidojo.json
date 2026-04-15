@@ -1,0 +1,81 @@
+{
+    "data":  {
+                 "id":  "iiOpbwpDheVidfun4",
+                 "actId":  "6lDMfTxEj4h8hSZ6i",
+                 "userId":  "arfkAmtHj3bOzLI6B",
+                 "startedAt":  "2026-04-13T19:18:28.288Z",
+                 "finishedAt":  null,
+                 "status":  "READY",
+                 "meta":  {
+                              "origin":  "API",
+                              "userAgent":  "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7920"
+                          },
+                 "stats":  {
+                               "inputBodyLen":  14297,
+                               "migrationCount":  0,
+                               "rebootCount":  0,
+                               "restartCount":  0,
+                               "resurrectCount":  0,
+                               "computeUnits":  0
+                           },
+                 "options":  {
+                                 "build":  "latest",
+                                 "timeoutSecs":  0,
+                                 "memoryMbytes":  256,
+                                 "maxTotalChargeUsd":  38.775007,
+                                 "diskMbytes":  512
+                             },
+                 "buildId":  "vBmBhMvM9uQKywnsN",
+                 "defaultKeyValueStoreId":  "O5B4zzzIA7MzVsMQ2",
+                 "defaultDatasetId":  "YTRXORBTJj5epf6kr",
+                 "defaultRequestQueueId":  "7J5Nbk8avoMnB7dag",
+                 "storageIds":  {
+                                    "keyValueStores":  {
+                                                           "default":  "O5B4zzzIA7MzVsMQ2"
+                                                       },
+                                    "datasets":  {
+                                                     "default":  "YTRXORBTJj5epf6kr"
+                                                 },
+                                    "requestQueues":  {
+                                                          "default":  "7J5Nbk8avoMnB7dag"
+                                                      }
+                                },
+                 "pricingInfo":  {
+                                     "minimalMaxTotalChargeUsd":  null,
+                                     "pricingModel":  "PAY_PER_EVENT",
+                                     "isPriceChangeNotificationSuppressed":  false,
+                                     "startedAt":  "2026-01-07T15:35:14.292Z",
+                                     "createdAt":  "2026-01-07T15:35:14.671Z",
+                                     "apifyMarginPercentage":  0.2,
+                                     "pricingPerEvent":  {
+                                                             "actorChargeEvents":  {
+                                                                                       "dataset-item":  {
+                                                                                                            "eventTitle":  "Instagram Comment Item",
+                                                                                                            "eventDescription":  "Charged for each comment extracted beyond the free 15 comments included per post.",
+                                                                                                            "isOneTimeEvent":  false,
+                                                                                                            "eventPriceUsd":  0.0005
+                                                                                                        },
+                                                                                       "query-event":  {
+                                                                                                           "eventTitle":  "Instagram Post Comments Query",
+                                                                                                           "eventDescription":  "Charged when scraping comments from an Instagram post, includes first 15 comments free.",
+                                                                                                           "isOneTimeEvent":  false,
+                                                                                                           "eventPriceUsd":  0.0075
+                                                                                                       }
+                                                                                   }
+                                                         }
+                                 },
+                 "chargedEventCounts":  {
+                                            "dataset-item":  0,
+                                            "query-event":  0
+                                        },
+                 "platformUsageBillingModel":  "DEVELOPER",
+                 "accountedChargedEventCounts":  {
+                                                     "dataset-item":  0,
+                                                     "query-event":  0
+                                                 },
+                 "generalAccess":  "FOLLOW_USER_SETTING",
+                 "buildNumber":  "0.0.111",
+                 "containerUrl":  "https://dv9qplumrhos.runs.apify.net",
+                 "usageTotalUsd":  0
+             }
+}

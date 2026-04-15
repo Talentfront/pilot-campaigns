@@ -1,0 +1,13 @@
+# Regenerable from analysis/build_workspace.sql + run_analysis.py
+analysis/pilot.duckdb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp

@@ -1,0 +1,11 @@
+{
+    "code_or_id_or_url":  [
+                              "https://www.instagram.com/reel/DW20px2kiNY/",
+                              "https://www.instagram.com/reel/DW_x3ZrO2Wz/",
+                              "https://www.instagram.com/reel/DW34A7uCOwb/"
+                          ],
+    "sort_by":  "popular",
+    "max_comments":  200,
+    "scrape_replies":  true,
+    "max_replies":  20
+}
