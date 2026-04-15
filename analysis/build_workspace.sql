@@ -54,6 +54,10 @@ SELECT
     "URL"                               AS url
 FROM read_csv_auto('submissions - submissions.csv', header = true);
 
+-- Points at the filtered labeled CSV produced by build_filtered_comments.py.
+-- That script drops creator-posted spam (owner flag, cross-video duplicate
+-- long text, and commenter-matches-creator-handle). Fall back to the raw
+-- labeled CSV only if the filtered one is absent.
 CREATE OR REPLACE VIEW raw_comments AS
 SELECT
     extract_post_id(input_url)          AS post_id,
@@ -73,24 +77,50 @@ SELECT
     is_canonical,
     canonical_id,
     label_source
-FROM read_csv_auto('analysis_comment_level.csv', header = true);
+FROM read_csv_auto('analysis/analysis_comment_level_filtered.csv', header = true);
 
+-- Per-post aggregates from the un-filtered NLP pipeline. Consumed as-is
+-- because the winner_score formula there is non-trivial and we don't want
+-- to re-derive it incorrectly. Downstream queries that need *filtered*
+-- per-post rates (pooled high-intent, theme share) should compute them
+-- from raw_comments directly, which already points at the filtered CSV.
 CREATE OR REPLACE VIEW raw_posts AS
 SELECT
     extract_post_id(input_url)          AS post_id,
     input_url,
-    n_comments,
-    n_replies,
-    n_total_text_rows,
+    n_comments                          AS n_comments_orig,
+    n_replies                           AS n_replies_orig,
+    n_total_text_rows                   AS n_total_text_rows_orig,
     pos_rate, neu_rate, neg_rate,
-    high_rate, med_rate, low_rate,
+    high_rate                           AS high_rate_orig,
+    med_rate, low_rate,
     confusion_rate,
-    negative_or_confusion_rate,
+    negative_or_confusion_rate          AS neg_or_conf_rate_orig,
     replies_to_comments_ratio,
-    top_theme_1, top_theme_2, top_theme_3,
-    top_theme_share_1, top_theme_share_2, top_theme_share_3,
+    top_theme_1                         AS top_theme_1_orig,
+    top_theme_2                         AS top_theme_2_orig,
+    top_theme_3                         AS top_theme_3_orig,
+    top_theme_share_1                   AS top_theme_share_1_orig,
+    top_theme_share_2                   AS top_theme_share_2_orig,
+    top_theme_share_3                   AS top_theme_share_3_orig,
     winner_score
 FROM read_csv_auto('analysis_post_level.csv', header = true);
+
+-- Per-post rates recomputed from the filtered comment-level data. Used
+-- alongside raw_posts so the v_videos master view can expose both original
+-- and filtered numbers side-by-side for diffing.
+CREATE OR REPLACE VIEW post_rates_filtered AS
+SELECT
+    post_id,
+    COUNT(*) AS n_filtered_comments,
+    SUM(CASE WHEN lower(watch_intent_label) = 'high' THEN 1 ELSE 0 END) AS k_high_filtered,
+    AVG(CASE WHEN lower(watch_intent_label) = 'high' THEN 1.0 ELSE 0.0 END) AS high_rate_filtered,
+    AVG(CASE WHEN confusion_flag
+              OR lower(watch_intent_label) = 'low'
+             THEN 1.0 ELSE 0.0 END) AS neg_or_conf_rate_filtered
+FROM raw_comments
+WHERE watch_intent_label IS NOT NULL AND watch_intent_label <> ''
+GROUP BY post_id;
 
 -- ---------------------------------------------------------------------------
 -- Joined views
@@ -110,17 +140,27 @@ SELECT
     coalesce(c.comments, s.comments)            AS comments,
     c.engagement_rate_pct,
     s.payout_usd,
-    p.n_comments                                AS n_comments_analyzed,
-    p.n_replies                                 AS n_replies_analyzed,
-    p.n_total_text_rows,
-    p.high_rate,
-    p.negative_or_confusion_rate,
+    p.n_comments_orig                           AS n_comments_analyzed,
+    p.n_replies_orig                            AS n_replies_analyzed,
+    p.n_total_text_rows_orig                    AS n_total_text_rows,
+    -- Original (un-filtered) rates
+    p.high_rate_orig                            AS high_rate,
+    p.neg_or_conf_rate_orig                     AS negative_or_confusion_rate,
     p.winner_score,
-    p.top_theme_1, p.top_theme_2, p.top_theme_3,
-    p.top_theme_share_1, p.top_theme_share_2, p.top_theme_share_3
+    p.top_theme_1_orig                          AS top_theme_1,
+    p.top_theme_2_orig                          AS top_theme_2,
+    p.top_theme_3_orig                          AS top_theme_3,
+    p.top_theme_share_1_orig                    AS top_theme_share_1,
+    p.top_theme_share_2_orig                    AS top_theme_share_2,
+    p.top_theme_share_3_orig                    AS top_theme_share_3,
+    -- Filtered rates (recomputed from cleaned comments)
+    coalesce(f.n_filtered_comments, 0)          AS n_filtered_comments,
+    f.high_rate_filtered,
+    f.neg_or_conf_rate_filtered
 FROM raw_posts p
-LEFT JOIN raw_clips c        USING (post_id)
-LEFT JOIN raw_submissions s  USING (post_id);
+LEFT JOIN raw_clips c           USING (post_id)
+LEFT JOIN raw_submissions s     USING (post_id)
+LEFT JOIN post_rates_filtered f USING (post_id);
 
 -- Flattened (profile, post, theme, share) for theme-mix queries per account.
 CREATE OR REPLACE VIEW v_video_themes AS

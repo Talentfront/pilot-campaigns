@@ -16,6 +16,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import subprocess
+
 import duckdb
 import numpy as np
 import pandas as pd
@@ -30,6 +32,27 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = Path(__file__).resolve().parent
 DB_PATH = ANALYSIS_DIR / "pilot.duckdb"
 SQL_PATH = ANALYSIS_DIR / "build_workspace.sql"
+FILTER_SCRIPT = ANALYSIS_DIR / "build_filtered_comments.py"
+FILTERED_CSV = ANALYSIS_DIR / "analysis_comment_level_filtered.csv"
+
+
+def ensure_filtered_comments() -> None:
+    """Regenerate the filtered comment CSV before every run.
+
+    Cheap (runs in ~1s) and guarantees the workspace is consistent with the
+    current filter rules if build_filtered_comments.py is edited.
+    """
+    result = subprocess.run(
+        [sys.executable, str(FILTER_SCRIPT)],
+        cwd=PROJECT_ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    # Forward the one-line summary the filter prints.
+    for line in result.stdout.splitlines():
+        if line.strip():
+            print(line)
 
 
 def build_workspace() -> duckdb.DuckDBPyConnection:
@@ -613,6 +636,7 @@ def chart_theme_intent_vs_viewlift(df: pd.DataFrame) -> None:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    ensure_filtered_comments()
     con = build_workspace()
     report_join_gaps(con)
 

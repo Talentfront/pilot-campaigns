@@ -1,32 +1,32 @@
 profile,n_videos,total_views,median_views,total_payout_usd,total_comments_analyzed,total_labeled_intent,mean_winner_score,mean_high_intent_rate_raw,mean_high_intent_rate_shrunk,pooled_high_intent_rate,mean_neg_or_conf_rate,weighted_winner_score,has_nlp_data,theme_mix_top3
-rizzlerreelpull,1,4416.0,4416,0.0,3.0,3.0,0.5,1.0,0.5326217420352664,1.0,1.0,0.5,True,"Media Identification (67.0%), Exclamations and Questions (33.0%)"
-trend_istg,1,8205.0,8205,0.0,3.0,7.0,0.5,0.7142857142857143,0.5207813585000486,0.7142857142857143,0.42857142857142855,0.5,True,"Media Identification (71.0%), Observations on Women (14.0%), Exclamations and Questions (14.0%)"
-dailydadly.jokes,1,1952.0,1952,0.0,1.0,2.0,0.75,1.0,0.45499062872009427,1.0,0.5,0.75,True,Media Identification (100.0%)
-moovieshub.ig,2,237711.0,118856,0.0,68.0,97.0,0.18269230769230768,0.4642857142857143,0.39569000536771903,0.4329896907216495,0.5631868131868132,0.12330316742081446,True,"Positive Affirmations (50.0%), Media Identification (42.0%), Exclamations and Questions (21.0%)"
-notlaughter,1,9981.0,9981,0.0,1.0,1.0,0.5,1.0,0.3464338763731245,1.0,1.0,0.5,True,Exclamations and Questions (100.0%)
-popci_nema,3,18397.0,5654,0.0,3.0,7.0,0.27777777777777773,0.5555555555555555,0.3226549387555862,0.5714285714285714,0.5555555555555555,0.27777777777777773,True,"Media Identification (83.0%), Wordplay on 'Knee' (50.0%), Exclamations and Questions (50.0%)"
-lilly.h_7,7,13463.0,1883,0.0,7.0,7.0,0.35714285714285715,0.8571428571428571,0.31797912257371896,0.8571428571428571,1.0,0.35714285714285715,True,"Step-by-Step Instructions (100.0%), Father-Daughter Relationships (100.0%)"
-clipper_.media,5,3856.0,0,0.0,5.0,5.0,0.3,0.8,0.3065972210539567,0.8,1.0,0.3,True,"Personal Statements (100.0%), Father-Daughter Relationships (100.0%)"
-sharp_clipper,2,3730.0,1865,0.0,2.0,4.0,0.25,0.6666666666666666,0.297087848707989,0.5,0.8333333333333333,0.25,True,"Father-Daughter Relationships (100.0%), Step-by-Step Instructions (33.0%), Observations on Women (33.0%)"
-spade.clipper,20,43614.0,2074,0.0,26.0,29.0,0.1958333333333333,0.6416666666666667,0.29028405692783504,0.5862068965517241,0.8916666666666666,0.16666666666666669,True,"Father-Daughter Relationships (78.0%), Step-by-Step Instructions (77.0%), Positive Affirmations (61.0%)"
-terrifying.history_,1,7741.0,7741,0.0,1.0,2.0,0.0,0.5,0.2888915173638493,0.5,1.0,0.0,True,"Step-by-Step Instructions (50.0%), Media Identification (50.0%)"
-millionairegoldmindset,5,96214.0,12349,0.0,6.0,6.0,0.4,0.5,0.2576854413055773,0.5,0.2,0.3333333333333333,True,"AI or Fake Content (100.0%), Media Identification (100.0%), Exclamations and Questions (100.0%)"
-clipping_universe01,2,3237.0,1618,0.0,2.0,3.0,0.25,0.5,0.23461314119036442,0.3333333333333333,0.5,0.25,True,"Media Identification (100.0%), Exclamations and Questions (100.0%)"
-(unknown),12,3544601.0,165009,2110.94,379.0,371.0,-0.09574022662790778,0.26827678382630077,0.20650788558109653,0.15363881401617252,0.728034020908417,-0.22391058315831744,True,"Wordplay on 'Knee' (49.0%), Exclamations and Questions (42.0%), Smooth and Youthful (31.0%)"
-humoured.ig,1,6605.0,6605,0.0,2.0,5.0,0.0,0.2,0.19281320923086973,0.2,0.4,0.0,True,"Positive Affirmations (60.0%), Exclamations and Questions (40.0%)"
-cineversevault1,1,1985.0,1985,0.0,1.0,0.0,0.0,0.0,0.18387553041018379,,0.0,0.0,True,
-streamer_hubz,1,234.0,234,0.0,1.0,0.0,0.0,0.0,0.18387553041018379,,0.0,0.0,True,
-humourjoyusaa,7,37181.0,4924,0.0,8.0,5.0,-0.07142857142857142,0.07142857142857142,0.18318141541803673,0.2,0.2857142857142857,-0.0625,True,"Step-by-Step Instructions (100.0%), Observations on Women (100.0%), Exclamations and Questions (75.0%)"
-podcast_pulse.03,8,32653.0,3468,0.0,8.0,12.0,-0.3125,0.125,0.15991941246692482,0.08333333333333333,0.875,-0.3125,True,"Wordplay on 'Knee' (100.0%), Smooth and Youthful (100.0%), Exclamations and Questions (90.0%)"
-w.memessss,3,11951.0,4679,0.0,3.0,2.0,-0.3333333333333333,0.0,0.15945890998825163,0.0,0.6666666666666666,-0.3333333333333333,True,Exclamations and Questions (100.0%)
-fanmania_67,7,45824.0,4041,0.0,19.0,13.0,-0.19642857142857142,0.03571428571428571,0.1510636803316992,0.07692307692307693,0.4642857142857143,-0.13157894736842105,True,"Personal Statements (75.0%), Exclamations and Questions (75.0%), Smooth and Youthful (75.0%)"
-iconicbloopers,3,405939.0,156131,80.74,31.0,27.0,-0.18974358974358974,0.14230769230769233,0.1476973905624173,0.1111111111111111,0.6641025641025641,-0.24441687344913152,True,"Observations on Women (50.0%), Exclamations and Questions (46.0%), Personal Statements (35.0%)"
-watchintohistory,1,52119.0,52119,0.0,2.0,1.0,0.0,0.0,0.14725059977728555,0.0,0.0,0.0,True,Step-by-Step Instructions (100.0%)
-dripyhumour,1,57597.0,57597,0.0,1.0,1.0,0.0,0.0,0.14725059977728555,0.0,0.0,0.0,True,Positive Affirmations (100.0%)
-improvingclip,1,42276.0,42276,0.0,1.0,1.0,0.0,0.0,0.14725059977728555,0.0,0.0,0.0,True,Personal Statements (100.0%)
-spad_official_,1,4395.0,4395,0.0,1.0,1.0,-0.5,0.0,0.14725059977728555,0.0,1.0,-0.5,True,Exclamations and Questions (100.0%)
-sus_meme_dealer,1,2391.0,2391,0.0,2.0,2.0,-0.5,0.0,0.12279240600760434,0.0,1.0,-0.5,True,"Observations on Women (50.0%), Exclamations and Questions (50.0%)"
-crazy_memes_clips,7,14347.0,1563,0.0,28.0,25.0,-0.5,0.0,0.09883844019421552,0.0,1.0,-0.5,True,"Exclamations and Questions (93.0%), Positive Affirmations (50.0%)"
-dopamemehq,4,7559.0,1192,0.0,14.0,14.0,-0.5,0.0,0.09873731738679176,0.0,1.0,-0.5,True,"Exclamations and Questions (92.0%), Personal Statements (33.0%)"
-gigglix._,1,50840.0,50840,0.0,2.0,4.0,-0.25,0.0,0.09217277422693645,0.0,0.5,-0.25,True,"Exclamations and Questions (50.0%), Personal Statements (25.0%), Step-by-Step Instructions (25.0%)"
-meme.ig,2,1780854.0,890427,493.03,131.0,134.0,-0.1480649188514357,0.07290886392009988,0.08084070447601643,0.08955223880597014,0.44194756554307113,-0.1503035327977433,True,"Step-by-Step Instructions (26.0%), Exclamations and Questions (26.0%), Speeding and Traffic Stops (22.0%)"
+rizzlerreelpull,1,4416.0,4416,0.0,3.0,3.0,0.5,1.0,0.5206270376870017,1.0,1.0,0.5,True,"Media Identification (67.0%), Exclamations and Questions (33.0%)"
+moovieshub.ig,2,237711.0,118856,0.0,68.0,87.0,0.18269230769230768,0.4642857142857143,0.44558167881163274,0.45977011494252873,0.5631868131868132,0.12330316742081446,True,"Positive Affirmations (50.0%), Media Identification (42.0%), Exclamations and Questions (21.0%)"
+trend_istg,1,8205.0,8205,0.0,3.0,3.0,0.5,0.7142857142857143,0.38422361269969824,0.6666666666666666,0.42857142857142855,0.5,True,"Media Identification (71.0%), Observations on Women (14.0%), Exclamations and Questions (14.0%)"
+notlaughter,1,9981.0,9981,0.0,1.0,1.0,0.5,1.0,0.3407900469135897,1.0,1.0,0.5,True,Exclamations and Questions (100.0%)
+dailydadly.jokes,1,1952.0,1952,0.0,1.0,1.0,0.75,1.0,0.3407900469135897,1.0,0.5,0.75,True,Media Identification (100.0%)
+terrifying.history_,1,7741.0,7741,0.0,1.0,2.0,0.0,0.5,0.28696291171459476,0.5,1.0,0.0,True,"Step-by-Step Instructions (50.0%), Media Identification (50.0%)"
+millionairegoldmindset,5,96214.0,12349,0.0,6.0,5.0,0.4,0.5,0.26799490163103423,0.6,0.2,0.3333333333333333,True,"Media Identification (100.0%), Exclamations and Questions (100.0%), AI or Fake Content (100.0%)"
+popci_nema,3,18397.0,5654,0.0,3.0,4.0,0.27777777777777773,0.5555555555555555,0.26032259064773,0.5,0.5555555555555555,0.27777777777777773,True,"Media Identification (83.0%), Wordplay on 'Knee' (50.0%), Exclamations and Questions (50.0%)"
+humoured.ig,1,6605.0,6605,0.0,2.0,3.0,0.0,0.2,0.24782018771239483,0.3333333333333333,0.4,0.0,True,"Positive Affirmations (60.0%), Exclamations and Questions (40.0%)"
+clipping_universe01,2,3237.0,1618,0.0,2.0,2.0,0.25,0.5,0.24700243011429762,0.5,0.5,0.25,True,"Exclamations and Questions (100.0%), Media Identification (100.0%)"
+sharp_clipper,2,3730.0,1865,0.0,2.0,3.0,0.25,0.6666666666666666,0.21820486406221962,0.3333333333333333,0.8333333333333333,0.25,True,"Father-Daughter Relationships (100.0%), Exclamations and Questions (33.0%), Observations on Women (33.0%)"
+(unknown),12,3544601.0,165009,2110.94,379.0,345.0,-0.09574022662790778,0.26827678382630077,0.20851990035377102,0.16521739130434782,0.728034020908417,-0.22391058315831744,True,"Wordplay on 'Knee' (49.0%), Exclamations and Questions (42.0%), Smooth and Youthful (31.0%)"
+spade.clipper,20,43614.0,2074,0.0,26.0,6.0,0.1958333333333333,0.6416666666666667,0.20611340732272035,0.5,0.8916666666666666,0.16666666666666666,True,"Father-Daughter Relationships (78.0%), Step-by-Step Instructions (77.0%), Positive Affirmations (61.0%)"
+cineversevault1,1,1985.0,1985,0.0,1.0,0.0,0.0,0.0,0.1885895404120444,,0.0,0.0,True,
+streamer_hubz,1,234.0,234,0.0,1.0,0.0,0.0,0.0,0.1885895404120444,,0.0,0.0,True,
+lilly.h_7,7,13463.0,1883,0.0,7.0,0.0,0.35714285714285715,0.8571428571428571,0.18858954041204437,,1.0,0.35714285714285715,True,"Father-Daughter Relationships (100.0%), Step-by-Step Instructions (100.0%)"
+humourjoyusaa,7,37181.0,4924,0.0,8.0,5.0,-0.07142857142857142,0.07142857142857142,0.18748228184224922,0.2,0.2857142857142857,-0.0625,True,"Step-by-Step Instructions (100.0%), Observations on Women (100.0%), Exclamations and Questions (75.0%)"
+clipper_.media,5,3856.0,0,0.0,5.0,1.0,0.3,0.8,0.18151459499263659,0.0,1.0,0.3,True,"Father-Daughter Relationships (100.0%), Personal Statements (100.0%)"
+podcast_pulse.03,8,32653.0,3468,0.0,8.0,7.0,-0.3125,0.125,0.1810835584019584,0.14285714285714285,0.875,-0.3125,True,"Wordplay on 'Knee' (100.0%), Smooth and Youthful (100.0%), Exclamations and Questions (90.0%)"
+w.memessss,3,11951.0,4679,0.0,3.0,2.0,-0.3333333333333333,0.0,0.16500638901401846,0.0,0.6666666666666666,-0.3333333333333333,True,Exclamations and Questions (100.0%)
+fanmania_67,7,45824.0,4041,0.0,19.0,13.0,-0.19642857142857142,0.03571428571428571,0.15619517931594556,0.07692307692307693,0.4642857142857143,-0.13157894736842105,True,"Exclamations and Questions (75.0%), Smooth and Youthful (75.0%), Personal Statements (75.0%)"
+spad_official_,1,4395.0,4395,0.0,1.0,1.0,-0.5,0.0,0.1532148133150055,0.0,1.0,-0.5,True,Exclamations and Questions (100.0%)
+dripyhumour,1,57597.0,57597,0.0,1.0,1.0,0.0,0.0,0.1532148133150055,0.0,0.0,0.0,True,Positive Affirmations (100.0%)
+watchintohistory,1,52119.0,52119,0.0,2.0,1.0,0.0,0.0,0.1532148133150055,0.0,0.0,0.0,True,Step-by-Step Instructions (100.0%)
+improvingclip,1,42276.0,42276,0.0,1.0,1.0,0.0,0.0,0.1532148133150055,0.0,0.0,0.0,True,Personal Statements (100.0%)
+iconicbloopers,3,405939.0,156131,80.74,31.0,27.0,-0.18974358974358974,0.14230769230769233,0.14989238142762504,0.1111111111111111,0.6641025641025641,-0.24441687344913152,True,"Observations on Women (50.0%), Exclamations and Questions (46.0%), Personal Statements (35.0%)"
+sus_meme_dealer,1,2391.0,2391,0.0,2.0,2.0,-0.5,0.0,0.1290148270023574,0.0,1.0,-0.5,True,"Observations on Women (50.0%), Exclamations and Questions (50.0%)"
+dopamemehq,4,7559.0,1192,0.0,14.0,9.0,-0.5,0.0,0.12461531093304089,0.0,1.0,-0.5,True,"Exclamations and Questions (92.0%), Personal Statements (33.0%)"
+crazy_memes_clips,7,14347.0,1563,0.0,28.0,17.0,-0.5,0.0,0.12396258001686732,0.0,1.0,-0.5,True,"Exclamations and Questions (93.0%), Positive Affirmations (50.0%)"
+gigglix._,1,50840.0,50840,0.0,2.0,3.0,-0.25,0.0,0.1114167627250914,0.0,0.5,-0.25,True,"Exclamations and Questions (50.0%), Step-by-Step Instructions (25.0%), Personal Statements (25.0%)"
+meme.ig,2,1780854.0,890427,493.03,131.0,134.0,-0.1480649188514357,0.07290886392009988,0.08172032632291998,0.08955223880597014,0.44194756554307113,-0.1503035327977433,True,"Step-by-Step Instructions (26.0%), Exclamations and Questions (26.0%), Speeding and Traffic Stops (22.0%)"
