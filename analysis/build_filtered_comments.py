@@ -38,6 +38,7 @@ CLIPS_PATH = PROJECT_ROOT / (
 
 OUT_PATH = ANALYSIS_DIR / "analysis_comment_level_filtered.csv"
 REPORT_PATH = ANALYSIS_DIR / "filter_report.md"
+OWNERS_PATH = ANALYSIS_DIR / "apify_post_owners.csv"
 
 LONG_COMMENT_CHARS = 80
 
@@ -70,16 +71,51 @@ def load_raw_aggregated() -> pd.DataFrame:
 
 
 def load_creator_handles() -> set[str]:
-    """Lowercased handles of every account that posted a video."""
+    """Lowercased handles of every account that posted a video.
+
+    Union of (a) the registered roster in All Clips, (b) any poster username
+    discovered from the Apify caption/owner rows. Rule 4 (commenter matches
+    creator handle) should apply to both — both groups are paid creators in
+    the campaign, just tracked in different spreadsheets.
+    """
     clips = pd.read_csv(CLIPS_PATH)
-    handles = (
+    roster = (
         clips["Profile"]
         .dropna()
         .str.extract(r"/([^/]+)/?$")[0]
         .str.lower()
         .dropna()
     )
-    return set(handles)
+    apify_owners = load_apify_post_owners()
+    return set(roster).union(
+        apify_owners["username"].dropna().str.lower()
+    )
+
+
+def load_apify_post_owners() -> pd.DataFrame:
+    """One row per post: who posted it, per the raw Apify caption data.
+
+    Instagram's caption row has is_created_by_media_owner=True and names the
+    poster's username — authoritative source for the post owner. Also writes
+    the result to apify_post_owners.csv so build_workspace.sql can read it
+    and backfill profiles that are missing from All Clips.
+    """
+    with RAW_PATH.open("r", encoding="cp1252") as f:
+        raw = json.load(f)
+    rows = []
+    for r in raw:
+        if r.get("content_type") != "caption":
+            continue
+        url = r.get("input_url")
+        username = r.get("username")
+        full_name = (r.get("user") or {}).get("full_name")
+        if url and username:
+            rows.append(
+                {"input_url": url, "username": username, "full_name": full_name}
+            )
+    df = pd.DataFrame(rows).drop_duplicates(subset=["input_url"])
+    df.to_csv(OWNERS_PATH, index=False)
+    return df
 
 
 def first_username(usernames) -> str | None:

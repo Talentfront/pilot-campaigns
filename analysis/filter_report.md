@@ -7,7 +7,7 @@
 ## Rule hits (non-exclusive — a single row can match multiple rules)
 - Rule 1 (`is_created_by_media_owner=True`): **87**
 - Rule 3 (long text duplicated across ≥2 videos, ≥80 chars): **22**
-- Rule 4 (commenter username matches a known creator handle): **76**
+- Rule 4 (commenter username matches a known creator handle): **83**
 - Any rule: **102**
 
 - Surviving rows after filter: **821** (88.9% of input)
@@ -33,18 +33,18 @@
 
 | user | rule(s) | input_url | text (first 80 chars) |
 | --- | --- | --- | --- |
-| @thecinema.feed | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | @jjgarbowski ??? |
+| @thecinema.feed | 1,4 | https://www.instagram.com/reel/DW20px2kiNY/ | @jjgarbowski ??? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
-| @thecinema.feed | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | @amroyall ???? |
-| @thecinema.feed | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | @bryce._crawford ???? |
-| @thecinema.feed | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | @iden_tyzooo ???? |
-| @thecinema.feed | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | @incredible_watiqueali ???? |
+| @thecinema.feed | 1,4 | https://www.instagram.com/reel/DW20px2kiNY/ | @amroyall ???? |
+| @thecinema.feed | 1,4 | https://www.instagram.com/reel/DW20px2kiNY/ | @bryce._crawford ???? |
+| @thecinema.feed | 1,4 | https://www.instagram.com/reel/DW20px2kiNY/ | @iden_tyzooo ???? |
+| @thecinema.feed | 1,4 | https://www.instagram.com/reel/DW20px2kiNY/ | @incredible_watiqueali ???? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
-| @thecinema.feed | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | @bynedanovski ???? |
+| @thecinema.feed | 1,4 | https://www.instagram.com/reel/DW20px2kiNY/ | @bynedanovski ???? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |
 | @1_stonealone | 1 | https://www.instagram.com/reel/DW20px2kiNY/ | ?? |

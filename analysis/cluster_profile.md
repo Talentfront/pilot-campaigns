@@ -19,14 +19,14 @@ Three intent measurements per cluster:
     - Conflict and Consequences: 0.00
 - Exemplars (highest winner_score):
     - https://www.instagram.com/reel/DXALwfNjNYh/  (winner=1.00, views=3886, profile=millionairegoldmindset)
-    - https://www.instagram.com/reel/DW2wl5WiNqx/  (winner=0.50, views=8203, profile=nan)
+    - https://www.instagram.com/reel/DW2wl5WiNqx/  (winner=0.50, views=8203, profile=houseof.contents_)
     - https://www.instagram.com/reel/DW9pZ47E9QO/  (winner=0.50, views=2577, profile=podcast_pulse.03)
 
 ## Cluster 1  (n=27)
 - Mean views: 214764
 - Mean winner_score: -0.144
 - High-intent rate: raw=0.155  shrunk=0.182  pooled=0.179 (105/586 comments)
-- Top accounts: (unknown) (9), podcast_pulse.03 (3), fanmania_67 (2)
+- Top accounts: podcast_pulse.03 (3), fanmania_67 (2), thecinema.feed (2)
 - Top themes (mean share):
     - Smooth and Youthful: 0.23
     - Exclamations and Questions: 0.21
@@ -34,14 +34,14 @@ Three intent measurements per cluster:
     - Observations on Women: 0.14
 - Exemplars (highest winner_score):
     - https://www.instagram.com/reel/DXCXcYrjGNc/  (winner=0.50, views=54292, profile=millionairegoldmindset)
-    - https://www.instagram.com/p/DW44MSXDd5n/  (winner=0.14, views=56494, profile=nan)
+    - https://www.instagram.com/p/DW44MSXDd5n/  (winner=0.14, views=56494, profile=girlsgetting.rejected)
     - https://www.instagram.com/reel/DXACv8kmL-m/  (winner=0.12, views=219578, profile=moovieshub.ig)
 
 ## Cluster 2  (n=11)
 - Mean views: 15501
 - Mean winner_score: 0.422
 - High-intent rate: raw=0.751  shrunk=0.361  pooled=0.600 (21/35 comments)
-- Top accounts: popci_nema (2), spade.clipper (1), (unknown) (1)
+- Top accounts: popci_nema (2), spade.clipper (1), interestingasfacts (1)
 - Top themes (mean share):
     - Media Identification: 0.77
     - Positive Affirmations: 0.10

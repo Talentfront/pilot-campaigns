@@ -41,6 +41,17 @@ FROM read_csv_auto(
 )
 WHERE "URL" IS NOT NULL;
 
+-- Post-owner fallback derived from the raw Apify caption rows. Written
+-- by build_filtered_comments.py. Used to backfill the ~12 videos that are
+-- in the submissions feed + Apify scrape but missing from All Clips —
+-- those are same-tier paid creators tracked in a different spreadsheet.
+CREATE OR REPLACE VIEW raw_apify_owners AS
+SELECT
+    extract_post_id(input_url)          AS post_id,
+    lower(username)                     AS profile,
+    full_name                           AS profile_full_name
+FROM read_csv_auto('analysis/apify_post_owners.csv', header = true);
+
 CREATE OR REPLACE VIEW raw_submissions AS
 SELECT
     extract_post_id("URL")              AS post_id,
@@ -132,7 +143,12 @@ CREATE OR REPLACE VIEW v_videos AS
 SELECT
     p.post_id,
     p.input_url,
-    c.profile,
+    -- Prefer All Clips profile (roster tracking) but fall back to the Apify
+    -- caption's username when All Clips doesn't cover the post. Both are
+    -- legitimate paid creators in the campaign.
+    coalesce(c.profile, o.profile)              AS profile,
+    CASE WHEN c.profile IS NULL AND o.profile IS NOT NULL
+         THEN 'apify_fallback' ELSE 'all_clips' END AS profile_source,
     coalesce(c.platform, s.platform)            AS platform,
     -- Prefer clip-report views (authoritative campaign report), fall back to submissions.
     coalesce(c.views, s.views)                  AS views,
@@ -159,6 +175,7 @@ SELECT
     f.neg_or_conf_rate_filtered
 FROM raw_posts p
 LEFT JOIN raw_clips c           USING (post_id)
+LEFT JOIN raw_apify_owners o    USING (post_id)
 LEFT JOIN raw_submissions s     USING (post_id)
 LEFT JOIN post_rates_filtered f USING (post_id);
 
