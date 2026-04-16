@@ -1,0 +1,84 @@
+theme,rank,text_raw,input_url,canonical_id,watch_intent_label,similarity
+MIXED,1,??,https://www.instagram.com/reel/DW_x3ZrO2Wz/,c12,low,0.6635
+MIXED,2,?? amazing confusion,https://www.instagram.com/reel/DW20px2kiNY/,c74,med,0.6543
+MIXED,3,What,https://www.instagram.com/reel/DW7nuj-JJSH/,c445,med,0.6423
+MIXED,4,Explain?,https://www.instagram.com/reel/DW9K0KdvpR0/,c430,med,0.6395
+MIXED,5,Same thing ????,https://www.instagram.com/reel/DW34A7uCOwb/,c227,low,0.6364
+MIXED,6,Huh,https://www.instagram.com/reel/DXAvh_OvwfP/,c428,low,0.6332
+MIXED,7,??????,https://www.instagram.com/reel/DW34A7uCOwb/,c11,low,0.6314
+MIXED,8,@malutes1 Why salty about my comment?,https://www.instagram.com/reel/DW34A7uCOwb/,c206,low,0.631
+MIXED,9,Huh?,https://www.instagram.com/reel/DXCKDsiE_zc/,c457,med,0.6309
+MIXED,10,????????????,https://www.instagram.com/reel/DW34A7uCOwb/,c228,low,0.6305
+Movie Name Requests,1,Movie's name please,https://www.instagram.com/reel/DXACv8kmL-m/,c350,high,0.8314
+Movie Name Requests,2,Name of film please,https://www.instagram.com/reel/DXACv8kmL-m/,c334,high,0.8108
+Movie Name Requests,3,Movie name,https://www.instagram.com/reel/DW20px2kiNY/,c90,high,0.7943
+Movie Name Requests,4,Movie ?,https://www.instagram.com/reel/DXCey5pDdXZ/,c471,high,0.7876
+Movie Name Requests,5,Movie name?,https://www.instagram.com/reel/DW20px2kiNY/,c31,high,0.7684
+Movie Name Requests,6,Which movie??,https://www.instagram.com/reel/DW20px2kiNY/,c70,high,0.7648
+Movie Name Requests,7,Movie ???,https://www.instagram.com/reel/DXAEtnzkwvL/,c418,high,0.7516
+Movie Name Requests,8,What’s the movie ?,https://www.instagram.com/reel/DW9ebHtPnBL/,c405,high,0.746
+Movie Name Requests,9,Which movie,https://www.instagram.com/reel/DW20px2kiNY/,c19,high,0.7451
+Movie Name Requests,10,Name of the movie?,https://www.instagram.com/reel/DXACv8kmL-m/,c364,high,0.7385
+Smooth Move Compliments,1,That was smooth,https://www.instagram.com/reel/DW_x3ZrO2Wz/,c154,low,0.7555
+Smooth Move Compliments,2,That was smooooth....,https://www.instagram.com/reel/DW20px2kiNY/,c10,low,0.7442
+Smooth Move Compliments,3,That was smooth though,https://www.instagram.com/reel/DW20px2kiNY/,c60,med,0.736
+Smooth Move Compliments,4,That was smooooooooth af,https://www.instagram.com/reel/DW20px2kiNY/,c73,low,0.7335
+Smooth Move Compliments,5,Ok that's smooth ??,https://www.instagram.com/reel/DW20px2kiNY/,c108,low,0.7244
+Smooth Move Compliments,6,Smooooth ????,https://www.instagram.com/reel/DW20px2kiNY/,c89,med,0.7243
+Smooth Move Compliments,7,so smooth bro????,https://www.instagram.com/reel/DW3hkdljRnT/,c302,low,0.7178
+Smooth Move Compliments,8,Smooth ?????,https://www.instagram.com/reel/DXAkYV4DpiT/,c377,low,0.7146
+Smooth Move Compliments,9,SMOTH AS FUCK ??,https://www.instagram.com/reel/DW3hkdljRnT/,c305,low,0.7076
+Smooth Move Compliments,10,Now how simple and smooth was that??,https://www.instagram.com/reel/DW20px2kiNY/,c99,med,0.702
+Short Minimal Reactions,1,Sheesh,https://www.instagram.com/reel/DXAkYV4DpiT/,c381,low,0.6708
+Short Minimal Reactions,2,Nice ????,https://www.instagram.com/reel/DW20px2kiNY/,c66,med,0.6465
+Short Minimal Reactions,3,@trishmatemba5 oh,https://www.instagram.com/reel/DW28Wv1kjmN/,c260,low,0.6404
+Short Minimal Reactions,4,Cute!,https://www.instagram.com/reel/DXAkYV4DpiT/,c382,med,0.6402
+Short Minimal Reactions,5,Oh my,https://www.instagram.com/reel/DW28Wv1kjmN/,c272,low,0.6374
+Short Minimal Reactions,6,M,https://www.instagram.com/reel/DW_x3ZrO2Wz/,c149,low,0.6273
+Short Minimal Reactions,7,Kinda cringe,https://www.instagram.com/reel/DW40azaiJZ1/,c281,low,0.627
+Short Minimal Reactions,8,@buddy_2323 no.,https://www.instagram.com/reel/DW4VNdsDuPA/,c313,low,0.626
+Short Minimal Reactions,9,Smooth,https://www.instagram.com/reel/DW20px2kiNY/,c86,low,0.6256
+Short Minimal Reactions,10,Oh-,https://www.instagram.com/reel/DXCyaZ5E8fW/,c470,low,0.6253
+Critical Comments About Woman,1,Women??,https://www.instagram.com/reel/DW34A7uCOwb/,c231,low,0.6805
+Critical Comments About Woman,2,Dumb woman..,https://www.instagram.com/reel/DW34A7uCOwb/,c239,low,0.6735
+Critical Comments About Woman,3,Women ????????,https://www.instagram.com/reel/DW34A7uCOwb/,c229,low,0.668
+Critical Comments About Woman,4,Women,https://www.instagram.com/reel/DW6prcmPyLj/,c441,low,0.6621
+Critical Comments About Woman,5,Woman I swear dude stiaght dumb af,https://www.instagram.com/reel/DW34A7uCOwb/,c236,low,0.6421
+Critical Comments About Woman,6,"Finally, she said it ???????????????? women, they don't agree quickly ??????????",https://www.instagram.com/reel/DW34A7uCOwb/,c201,low,0.6395
+Critical Comments About Woman,7,Typical.  All women think they are wanted by every man.  Stupid bitches,https://www.instagram.com/reel/DW34A7uCOwb/,c238,low,0.6189
+Critical Comments About Woman,8,And THAT’S what wrong with half these fucking females SMH,https://www.instagram.com/reel/DW34A7uCOwb/,c234,low,0.615
+Critical Comments About Woman,9,every women in America today,https://www.instagram.com/reel/DW34A7uCOwb/,c212,low,0.6145
+Critical Comments About Woman,10,So all you kneed is a dumb girl.  Weird message.,https://www.instagram.com/reel/DW_x3ZrO2Wz/,c153,low,0.5931
+Knee Pun Wordplay,1,Knee game,https://www.instagram.com/reel/DW20px2kiNY/,c94,low,0.7779
+Knee Pun Wordplay,2,You kneed me ??,https://www.instagram.com/reel/DW3PN7dCL-0/,c296,low,0.7608
+Knee Pun Wordplay,3,He means kneed . ( Hit me with your knee),https://www.instagram.com/reel/DW3elyYjcp2/,c319,low,0.7512
+Knee Pun Wordplay,4,U kneed me ??,https://www.instagram.com/reel/DW3elyYjcp2/,c324,high,0.7383
+Knee Pun Wordplay,5,@alex_capp2 kneed,https://www.instagram.com/reel/DW3elyYjcp2/,c323,low,0.7341
+Knee Pun Wordplay,6,"Can someone ""kneed me"" over here ?????? ---------------------------->>>",https://www.instagram.com/reel/DW20px2kiNY/,c93,high,0.7287
+Knee Pun Wordplay,7,Knee you ? need you ???,https://www.instagram.com/reel/DW20px2kiNY/,c35,low,0.7198
+Knee Pun Wordplay,8,On my way to get kneed,https://www.instagram.com/reel/DXAkYV4DpiT/,c383,low,0.7117
+Knee Pun Wordplay,9,Knee grow,https://www.instagram.com/reel/DXBnXpfDGic/,c442,low,0.7093
+Knee Pun Wordplay,10,Kneed?need???,https://www.instagram.com/reel/DW20px2kiNY/,c18,low,0.6974
+AI Content Questions,1,Ai????,https://www.instagram.com/reel/DW20px2kiNY/,c92,med,0.7457
+AI Content Questions,2,It's ai right,https://www.instagram.com/reel/DW20px2kiNY/,c101,low,0.7304
+AI Content Questions,3,This isnt Pilot Season. This is AI,https://www.instagram.com/reel/DXCXcYrjGNc/,c395,high,0.6607
+AI Content Questions,4,"God it’s all ai now, I miss good shitposts",https://www.instagram.com/reel/DW9SgHhuO6i/,c191,low,0.651
+AI Content Questions,5,Moive TV show or its ai,https://www.instagram.com/reel/DW28Wv1kjmN/,c265,med,0.6438
+AI Content Questions,6,Ai slop,https://www.instagram.com/reel/DW9SgHhuO6i/,c190,low,0.6353
+AI Content Questions,7,Thats a good one ??,https://www.instagram.com/reel/DW3PN7dCL-0/,c295,low,0.601
+AI Content Questions,8,This shit look hella AI lmao,https://www.instagram.com/reel/DW40azaiJZ1/,c282,low,0.6
+AI Content Questions,9,"@illumination_creation nah just looks corny to me, shit can still look low budget and not be ai ???????",https://www.instagram.com/reel/DW40azaiJZ1/,c283,low,0.5945
+AI Content Questions,10,@cabanaboy70 aren’t you clever,https://www.instagram.com/reel/DW9SgHhuO6i/,c178,low,0.5877
+Traffic Stop Debate,1,@cabanaboy70 Never heard of a speed trap?,https://www.instagram.com/reel/DW9SgHhuO6i/,c173,low,0.5862
+Traffic Stop Debate,2,@cabanaboy70 I’ve been pulled over for a tail light that was out. However I was not ticketed. Just sayin,https://www.instagram.com/reel/DW9SgHhuO6i/,c168,low,0.5827
+Traffic Stop Debate,3,Fun fact. If you don’t speed you won’t be pulled over and agitated.,https://www.instagram.com/reel/DW9SgHhuO6i/,c163,low,0.5772
+Traffic Stop Debate,4,"Officer, I wouldn't presume to know what thoughts are going through your head. How about you tell me why you pulled me over. If I appear agitated it's because you stopped me for the illegal purpose of putting me through a guessing game.",https://www.instagram.com/reel/DW9SgHhuO6i/,c199,low,0.5532
+Traffic Stop Debate,5,@cabanaboy70 fun fact multiple states still have quota systems for speeding tickets so police will lie to pull people over to reach quotas,https://www.instagram.com/reel/DW9SgHhuO6i/,c166,low,0.5477
+Traffic Stop Debate,6,@cabanaboy70 been pulled over before while going the speed limit btw,https://www.instagram.com/reel/DW9SgHhuO6i/,c172,low,0.5345
+Traffic Stop Debate,7,"Officer, its not my duty to tell you why YOU pulled me over, its yours. So if you would be so kind as to give me the reason, we can go about everything and I can be on my way as quickly as possible.",https://www.instagram.com/reel/DW9SgHhuO6i/,c192,low,0.5234
+Traffic Stop Debate,8,@cabanaboy70 what do you mean? 70 in a 55 isn’t speeding. That’s going speed limit.,https://www.instagram.com/reel/DW9SgHhuO6i/,c167,low,0.4993
+Traffic Stop Debate,9,"He wasn’t speeding a little bit tho lol, she was mean about it but not wrong.",https://www.instagram.com/reel/DW9SgHhuO6i/,c180,low,0.4918
+Traffic Stop Debate,10,She did apologize,https://www.instagram.com/reel/DW20px2kiNY/,c6,low,0.4738
+Strike System References,1,"He has 8 more strikes, i say using one right here is allowed",https://www.instagram.com/reel/DW9SgHhuO6i/,c179,low,0.6722
+Strike System References,2,How many strikes would it have cost to shoot her 47 times,https://www.instagram.com/reel/DW9SgHhuO6i/,c183,low,0.549
+Strike System References,3,@lemongrassarch we serious? He was being nice and shes pushing it so i said he should use up one of his strikes bc shes literally pushing him to his limit. I didnt say he wasnt speeding,https://www.instagram.com/reel/DW9SgHhuO6i/,c182,low,0.521

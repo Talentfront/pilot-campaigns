@@ -1,6 +1,13 @@
 # Regenerable from analysis/build_workspace.sql + run_analysis.py
 analysis/pilot.duckdb
 
+# Canonical embeddings cache — regenerable via recluster_comments.py
+# (~7 MB binary, costs ~$0.05 + 90s to rebuild)
+analysis/recluster_embeddings.npy
+
+# Safety backups produced by apply_theme_relabel.py
+*.prerelabel
+
 # Python
 __pycache__/
 *.pyc

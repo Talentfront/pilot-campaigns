@@ -1,0 +1,454 @@
+canonical_id,old_theme_label,new_cluster_id,new_theme_label,is_mixed,coherence,supports_share,new_theme_description
+,,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c0,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c10,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c100,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c101,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c102,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c103,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c104,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c105,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c106,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c107,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c108,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c109,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c11,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c110,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c111,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c112,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c113,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c114,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c115,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c116,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c117,Short Minimal Reactions,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c118,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c119,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c12,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c120,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c121,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c122,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c123,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c124,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c125,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c126,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c127,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c128,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c129,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c13,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c130,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c131,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c132,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c133,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c134,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c135,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c136,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c137,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c138,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c139,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c14,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c140,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c141,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c142,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c143,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c144,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c145,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c146,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c147,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c148,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c149,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c15,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c150,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c151,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c152,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c153,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c154,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c155,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c156,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c157,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c158,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c159,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c16,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c160,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c161,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c162,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c163,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c164,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c165,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c166,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c167,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c168,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c169,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c17,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c170,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c171,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c172,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c173,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c174,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c175,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c176,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c177,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c178,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c179,Strike System References,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c18,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c180,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c181,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c182,Strike System References,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c183,Strike System References,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c184,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c185,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c186,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c187,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c188,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c189,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c19,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c190,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c191,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c192,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c193,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c194,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c195,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c196,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c197,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c198,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c199,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c2,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c20,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c200,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c201,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c202,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c203,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c204,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c205,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c206,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c207,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c208,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c209,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c21,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c210,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c211,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c212,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c213,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c214,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c215,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c216,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c217,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c218,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c219,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c220,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c221,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c222,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c223,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c224,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c225,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c226,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c227,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c228,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c229,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c23,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c230,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c231,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c232,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c233,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c234,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c235,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c236,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c237,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c238,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c239,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c24,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c240,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c241,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c242,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c243,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c244,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c245,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c246,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c247,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c248,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c249,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c25,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c250,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c251,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c252,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c253,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c254,Short Minimal Reactions,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c255,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c256,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c257,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c258,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c259,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c26,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c260,Short Minimal Reactions,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c261,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c262,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c263,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c264,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c265,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c266,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c267,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c268,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c269,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c27,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c270,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c271,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c272,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c273,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c274,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c275,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c276,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c277,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c278,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c279,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c28,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c280,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c281,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c282,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c283,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c284,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c285,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c286,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c287,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c288,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c289,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c29,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c290,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c291,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c292,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c293,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c294,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c295,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c296,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c297,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c298,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c299,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c3,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c30,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c300,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c301,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c302,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c303,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c304,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c305,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c306,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c307,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c308,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c309,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c31,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c310,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c311,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c312,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c313,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c314,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c315,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c316,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c317,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c318,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c319,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c32,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c320,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c321,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c322,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c323,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c324,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c325,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c326,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c327,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c328,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c329,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c33,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c330,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c331,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c332,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c334,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c336,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c337,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c338,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c339,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c34,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c340,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c341,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c342,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c343,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c344,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c345,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c347,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c348,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c349,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c35,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c350,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c351,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c352,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c353,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c354,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c356,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c357,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c358,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c359,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c36,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c360,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c361,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c362,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c363,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c364,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c365,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c366,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c367,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c368,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c369,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c37,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c370,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c371,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c372,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c373,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c374,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c375,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c376,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c377,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c378,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c379,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c38,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c380,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c381,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c382,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c383,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c384,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c385,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c386,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c387,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c388,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c389,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c39,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c390,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c391,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c392,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c393,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c394,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c395,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c397,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c398,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c399,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c4,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c40,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c400,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c401,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c402,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c403,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c404,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c405,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c406,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c407,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c408,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c409,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c41,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c410,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c412,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c413,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c416,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c417,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c418,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c419,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c42,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c420,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c421,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c422,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c423,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c424,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c426,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c428,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c429,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c43,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c430,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c431,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c432,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c433,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c434,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c436,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c437,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c438,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c439,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c44,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c440,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c441,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c442,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c444,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c445,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c446,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c447,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c448,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c449,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c45,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c451,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c452,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c453,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c456,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c457,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c458,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c46,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c463,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c466,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c47,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c470,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c471,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c474,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c476,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c478,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c479,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c48,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c480,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c481,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c49,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c5,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c50,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c51,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c52,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c53,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c54,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c55,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c56,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c57,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c58,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c59,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c6,Traffic Stop Debate,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c60,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c61,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c62,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c63,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c64,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c65,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c66,Short Minimal Reactions,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c67,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c68,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c69,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c7,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c70,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c71,Movie Name Requests,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c72,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c73,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c74,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c75,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c76,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c77,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c78,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c79,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c8,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c80,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c81,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c82,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c83,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c84,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c85,Critical Comments About Woman,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c86,Short Minimal Reactions,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c87,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c88,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c89,Smooth Move Compliments,2,Praising Smooth Execution,0,0.8418,1.0000,"Comments complimenting something as being 'smooth' - likely referring to a skillful action, clever move, or well-executed moment. All comments use variations of 'smooth' with emphasis through spelling or emoji."
+c9,MIXED,1,MIXED,1,0.7794,0.1500,"This cluster contains mostly question marks, confusion reactions ('??', 'Huh?', 'What?'), single letters, generic reactions ('Nice', 'oh', 'yes'), and one request for a name. These are non-topical reactions expressing confusion or minimal engagement, not comments about any specific subject matter."
+c90,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c91,Short Minimal Reactions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c92,AI Content Questions,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c93,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c94,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c95,Knee Pun Wordplay,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c96,MIXED,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c97,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.
+c98,Movie Name Requests,0,Asking for Movie Name,0,0.8044,0.9500,Comments requesting the title or name of a movie being discussed or shown. Nearly all comments directly ask 'what movie?' or 'movie name?' with variations in punctuation and phrasing.
+c99,Smooth Move Compliments,-1,MIXED,1,0.0000,0.0000,HDBSCAN noise point — no nearby cluster.

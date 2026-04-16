@@ -55,8 +55,14 @@ if not _auth_gate():
     st.stop()
 
 
+def _db_mtime() -> float:
+    """Cache-busting key. When apply_theme_relabel.py rebuilds the DB,
+    its mtime changes and the @st.cache_* entries below invalidate."""
+    return DB_PATH.stat().st_mtime if DB_PATH.exists() else 0.0
+
+
 @st.cache_resource
-def get_connection() -> duckdb.DuckDBPyConnection:
+def get_connection(_mtime: float) -> duckdb.DuckDBPyConnection:
     if not DB_PATH.exists():
         st.error(
             f"Workspace not built yet. Run `python analysis/run_analysis.py` "
@@ -67,8 +73,8 @@ def get_connection() -> duckdb.DuckDBPyConnection:
 
 
 @st.cache_data
-def load_tables() -> dict[str, pd.DataFrame]:
-    con = get_connection()
+def load_tables(_mtime: float) -> dict[str, pd.DataFrame]:
+    con = get_connection(_mtime)
     return {
         "videos": con.execute("SELECT * FROM v_videos").fetchdf(),
         "comments": con.execute("SELECT * FROM raw_comments").fetchdf(),
@@ -105,6 +111,24 @@ def load_tables() -> dict[str, pd.DataFrame]:
 def load_account_rollup() -> pd.DataFrame:
     path = ANALYSIS_DIR / "account_rollup.csv"
     return pd.read_csv(path) if path.exists() else pd.DataFrame()
+
+
+def load_theme_relabel_mapping() -> pd.DataFrame:
+    """Produced by analysis/relabel_themes.py. Absent on fresh checkouts —
+    in that case the Themes page just skips the audit-badge column."""
+    path = ANALYSIS_DIR / "theme_relabel_mapping.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(path)
+    if "is_mixed" in df.columns:
+        df["is_mixed"] = df["is_mixed"].astype(str).isin(
+            {"1", "True", "true"}
+        )
+    if "supports_share" in df.columns:
+        df["supports_share"] = pd.to_numeric(
+            df["supports_share"], errors="coerce"
+        )
+    return df
 
 
 def load_filter_report_counts() -> dict[str, int] | None:
@@ -236,7 +260,7 @@ st.sidebar.markdown(
 )
 
 # Load data once for all pages.
-T = load_tables()
+T = load_tables(_db_mtime())
 videos_df = T["videos"]
 comments_df = T["comments"]
 clusters_df = T["clusters"]
@@ -913,20 +937,46 @@ def page_reach_vs_intent() -> None:
 # ---------------------------------------------------------------------------
 
 @st.cache_data
-def _theme_exemplars(theme: str, limit: int = 3) -> pd.DataFrame:
-    """Top canonical high-intent comments for a theme, with source video URL.
+def _load_curated_exemplars(_mtime: float) -> pd.DataFrame:
+    """Exemplars pre-ranked by cosine similarity to the theme-label embedding.
+    Produced by analysis/build_theme_exemplars.py. Absent on fresh checkouts;
+    in that case the dashboard falls back to the confidence-based heuristic."""
+    path = ANALYSIS_DIR / "theme_exemplars.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    return pd.read_csv(path)
 
-    Pulls from comments_df (which is already the filtered labeled CSV via
-    raw_comments in the workspace). Prefers is_canonical=True then highest
-    watch_intent_confidence."""
+
+@st.cache_data
+def _theme_exemplars(theme: str, limit: int = 3, _mtime: float = 0.0) -> pd.DataFrame:
+    """Top canonical comments for a theme, with source video URL.
+
+    Primary source: theme_exemplars.csv (comments ranked by embedding
+    similarity to the theme label itself — directly shows how well the
+    cluster supports its name). Fallback: confidence-based heuristic on
+    comments_df. _mtime is a cache-bust key tied to the DuckDB mtime."""
+    curated = _load_curated_exemplars(_mtime)
+    if not curated.empty and theme in set(curated["theme"]):
+        df = curated[curated["theme"] == theme].sort_values("rank").head(limit).copy()
+        # Backfill columns the renderer expects.
+        if "watch_intent_label" not in df.columns:
+            df["watch_intent_label"] = None
+        return df.reset_index(drop=True)
+
     df = comments_df[
         (comments_df["theme_human_label"] == theme)
         & (comments_df["text_raw"].fillna("").str.len() > 0)
     ].copy()
     if df.empty:
         return df
-    df["_is_canon"] = df.get("is_canonical", False).fillna(False).astype(int)
-    df["_conf"] = df.get("watch_intent_confidence", 0).fillna(0)
+    if "is_canonical" in df.columns:
+        df["_is_canon"] = df["is_canonical"].fillna(False).astype(int)
+    else:
+        df["_is_canon"] = 0
+    if "watch_intent_confidence" in df.columns:
+        df["_conf"] = pd.to_numeric(df["watch_intent_confidence"], errors="coerce").fillna(0)
+    else:
+        df["_conf"] = 0.0
     df = df.sort_values(["_is_canon", "_conf"], ascending=[False, False])
     return df.drop_duplicates(subset=["text_raw"]).head(limit)
 
@@ -941,13 +991,13 @@ def page_themes() -> None:
 
     st.warning(
         "**View-lift is correlation, not cause.** A theme with high view-lift "
-        "might *cause* the views (e.g., 'Media Identification' comments show "
+        "might *cause* the views (e.g., 'Movie Name Requests' comments show "
         "up because viewers are hooked and trying to find the source), or it "
-        "might be a *passenger* signal (e.g., 'Smooth and Youthful' probably "
-        "comments on the video's aesthetic — which is the real driver, and "
-        "would occur whether or not the comment did). We cannot distinguish "
-        "these from one pilot — treat view-lift as 'worth investigating,' not "
-        "'causally confirmed.'"
+        "might be a *passenger* signal (e.g., 'Smooth Move Compliments' "
+        "probably comments on a character's charm — which is the real driver, "
+        "and would occur whether or not the comment did). We cannot "
+        "distinguish these from one pilot — treat view-lift as 'worth "
+        "investigating,' not 'causally confirmed.'"
     )
     st.divider()
 
@@ -957,6 +1007,22 @@ def page_themes() -> None:
         return
     themes = pd.read_csv(theme_path)
     themes = themes.sort_values("n_comments", ascending=False)
+
+    # Theme-label audit (from relabel_themes.py). Keyed by post-relabel name,
+    # so rows retain their audit flag after apply_theme_relabel.py has run.
+    relabel_df = load_theme_relabel_mapping()
+    audit_by_label: dict[str, dict] = {}
+    if not relabel_df.empty and "new_label" in relabel_df.columns:
+        for _, r in relabel_df.iterrows():
+            key = str(r.get("new_label") or "").strip()
+            if not key:
+                continue
+            audit_by_label[key] = {
+                "is_mixed": bool(r.get("is_mixed", False)),
+                "supports_share": r.get("supports_share"),
+                "current": str(r.get("current_label") or "").strip(),
+                "notes": str(r.get("notes") or "").strip(),
+            }
 
     def conf_level(n: int) -> str:
         if n >= 50:
@@ -970,14 +1036,21 @@ def page_themes() -> None:
     st.subheader("Themes by comment volume")
     for _, r in themes.iterrows():
         lift = r.get("view_lift")
+        audit = audit_by_label.get(str(r["theme"]).strip())
         with st.container():
             cols = st.columns([3, 1, 1, 1])
-            cols[0].markdown(
+            label_html = (
                 f"**{r['theme']}**"
                 + confidence_badge(r["_conf"])
-                + sample_badge(int(r["n_comments"]), "comments"),
-                unsafe_allow_html=True,
+                + sample_badge(int(r["n_comments"]), "comments")
             )
+            if audit and audit["is_mixed"]:
+                label_html += (
+                    "<span style='background:#525252;color:white;padding:2px 8px;"
+                    "border-radius:4px;font-size:0.75rem;font-weight:600;"
+                    "margin-left:6px;white-space:nowrap;'>⚠️ NO SINGLE TOPIC</span>"
+                )
+            cols[0].markdown(label_html, unsafe_allow_html=True)
             cols[1].metric("Videos", int(r["n_videos_appearing_in"]))
             cols[2].metric(
                 "High-intent",
@@ -996,38 +1069,100 @@ def page_themes() -> None:
                 f"by one or two viral videos. Check the scatter before "
                 f"quoting this number."
             )
+        # Label audit note — shown when relabeling reclassified this cluster
+        if audit:
+            share = audit.get("supports_share")
+            share_txt = (
+                f" (audit: label describes ~{share*100:.0f}% of sampled comments)"
+                if share is not None and pd.notna(share) else ""
+            )
+            if audit["is_mixed"]:
+                st.warning(
+                    f"**Cluster has no single topic.** Originally labeled "
+                    f"\"{audit['current']}\"; re-audit found the cluster is a "
+                    f"grab-bag of short reactions with no shared subject. "
+                    f"Treat stats for this row as aggregate background noise, "
+                    f"not a content-type finding.{share_txt}"
+                )
+            elif audit["current"] and audit["current"] != str(r["theme"]).strip():
+                st.info(
+                    f"Relabeled from \"{audit['current']}\" — the original "
+                    f"name came from the LLM seeing only 6 centroid-nearest "
+                    f"comments and didn't describe the bulk of the cluster."
+                    f"{share_txt}"
+                )
         # Named callouts (kept from v1, now secondary to the auto warning)
-        if r["theme"] == "Media Identification":
+        if r["theme"] == "Movie Name Requests":
             st.success(
                 "⭐ **The clearest intent signal in the pilot.** "
                 "Viewers asking 'Movie name?' / 'What show is this?' "
                 "show clear watch-intent. Prioritize content that "
                 "triggers this reaction pattern."
             )
-        elif r["theme"] == "Exclamations and Questions":
+        elif r["theme"] == "MIXED":
             st.info(
-                "ℹ️ The dominant reaction type on high-reach videos. "
-                "Lots of volume but mostly emoji / friend tags / passive "
-                "reactions — not active intent."
+                "ℹ️ This is the pilot's noise bucket — half of all labeled "
+                "comments land here with no shared topic. Its stats are "
+                "roughly baseline by construction; don't read content "
+                "signal into them."
             )
 
-        # Exemplar comments
-        exemplars = _theme_exemplars(r["theme"], limit=3)
+        # Exemplar comments — show a few inline, rest behind an expander.
+        exemplars = _theme_exemplars(r["theme"], limit=8, _mtime=_db_mtime())
+
+        def _intent_tag(label) -> str:
+            if not isinstance(label, str):
+                return "·"
+            wi = label.lower()
+            return (
+                "🟢" if wi == "high"
+                else "⚪" if wi == "med"
+                else "🔴" if wi == "low" else "·"
+            )
+
+        def _render_example(ex) -> None:
+            tag = _intent_tag(ex.get("watch_intent_label"))
+            text = str(ex["text_raw"])[:240]
+            link = video_link(ex.get("input_url"), "video")
+            sim = ex.get("similarity") if hasattr(ex, "get") else None
+            if sim is not None and pd.notna(sim):
+                sim_str = (
+                    f" <span style='color:#6b7280;font-size:0.75rem;'>"
+                    f"sim {float(sim):.2f}</span>"
+                )
+            else:
+                sim_str = ""
+            st.markdown(
+                f"{tag} _{text}_{sim_str}  &nbsp; {link}",
+                unsafe_allow_html=True,
+            )
+
         if exemplars is not None and not exemplars.empty:
-            with st.expander(f"Example comments ({len(exemplars)})"):
-                for _, ex in exemplars.iterrows():
-                    wi = (ex.get("watch_intent_label") or "").lower()
-                    tag = (
-                        "🟢" if wi == "high"
-                        else "⚪" if wi == "med"
-                        else "🔴" if wi == "low" else "·"
-                    )
-                    text = str(ex["text_raw"])[:240]
-                    link = video_link(ex.get("input_url"), "video")
-                    st.markdown(
-                        f"{tag} _{text}_  &nbsp; {link}",
-                        unsafe_allow_html=True,
-                    )
+            curated = (
+                "similarity" in exemplars.columns
+                and exemplars["similarity"].notna().any()
+            )
+            heading = (
+                "**Example comments** _(most on-label first)_:"
+                if curated else "**Example comments:**"
+            )
+            st.markdown(heading)
+            inline_n = min(3, len(exemplars))
+            for _, ex in exemplars.head(inline_n).iterrows():
+                _render_example(ex)
+            if len(exemplars) > inline_n:
+                with st.expander(
+                    f"{len(exemplars) - inline_n} more example(s)"
+                ):
+                    for _, ex in exemplars.iloc[inline_n:].iterrows():
+                        _render_example(ex)
+            st.caption(
+                "🟢 high-intent · ⚪ medium · 🔴 low · "
+                + ("ranked by cosine similarity to the theme label "
+                   "(higher sim = more directly supports the name)"
+                   if curated else
+                   "sorted by canonical + classifier confidence")
+            )
 
     st.divider()
     st.subheader("Intent vs view-lift by theme")
@@ -1050,7 +1185,7 @@ def page_themes() -> None:
     st.plotly_chart(fig, width='stretch')
     st.caption(
         "Themes in the top-right pull both audience AND views. "
-        "Media Identification is the only theme with meaningful volume "
+        "Movie Name Requests is the only theme with meaningful volume "
         "sitting there."
     )
 
@@ -1069,7 +1204,7 @@ def page_clusters() -> None:
     st.markdown(
         "**Themes vs clusters — what's the difference?**\n\n"
         "- **Themes** are *topics people mention in comments* (e.g., "
-        "'Media Identification', 'Observations on Women'). A single video's "
+        "'Movie Name Requests', 'Critical Comments About Woman'). A single video's "
         "comments span many themes.\n"
         "- **Clusters** are *groups of videos that attract similar mixes of "
         "themes*. Each video belongs to exactly one cluster.\n\n"
