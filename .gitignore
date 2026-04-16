@@ -1,5 +1,5 @@
-# Regenerable from analysis/build_workspace.sql + run_analysis.py
-analysis/pilot.duckdb
+# pilot.duckdb is committed so the Streamlit Cloud dashboard can read it.
+# Regenerable from analysis/build_workspace.sql + run_analysis.py.
 
 # Canonical embeddings cache — regenerable via recluster_comments.py
 # (~7 MB binary, costs ~$0.05 + 90s to rebuild)
