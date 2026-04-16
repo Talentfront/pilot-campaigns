@@ -177,6 +177,26 @@ def sample_badge(n: int, label: str = "n") -> str:
     )
 
 
+def pattern_badge(n_videos: int) -> str:
+    """Second axis of confidence: how many videos back the claim.
+
+    A high comment count on 1 video tells us about THAT video; it says
+    little about whether the account/theme pattern repeats. Separates
+    rate-precision from pattern-generalizability.
+    """
+    if n_videos >= 5:
+        label, color = f"📊 BROAD ({n_videos} videos)", "#16a34a"
+    elif n_videos >= 2:
+        label, color = f"📊 NARROW ({n_videos} videos)", "#d97706"
+    else:
+        label, color = "📊 SINGLE-VIDEO", "#dc2626"
+    return (
+        f"<span style='background:{color};color:white;padding:2px 8px;"
+        f"border-radius:4px;font-size:0.75rem;font-weight:600;"
+        f"margin-left:6px;white-space:nowrap;'>{label}</span>"
+    )
+
+
 # ---------------------------------------------------------------------------
 # Links + stats utilities
 # ---------------------------------------------------------------------------
@@ -240,7 +260,7 @@ page = st.sidebar.radio(
     "Navigate",
     [
         "Executive Summary",
-        "The Two-Audience Problem",
+        "Hypothesis: Reach vs Intent",
         "Accounts — who to bet on",
         "Reach × Intent — who to bet on",
         "Themes — what works",
@@ -252,11 +272,17 @@ page = st.sidebar.radio(
 
 st.sidebar.divider()
 st.sidebar.markdown(
-    "**Confidence legend**\n\n"
-    "🟢 **Robust** — hundreds of comments, stable across cuts\n\n"
-    "🟡 **Directional** — real signal but thin sample (~10-30 comments)\n\n"
-    "🔴 **Thin** — fewer than 10 comments, treat as a hypothesis\n\n"
-    "⚫ **Contaminated** — finding disappeared after spam removal"
+    "**Confidence legend (two axes)**\n\n"
+    "_Rate precision — how well we know the number:_\n\n"
+    "🟢 **Robust** — 30+ comments\n\n"
+    "🟡 **Directional** — 10-29 comments\n\n"
+    "🔴 **Thin** — <10 comments\n\n"
+    "⚫ **Contaminated** — disappeared after spam removal\n\n"
+    "_Pattern breadth — is it a repeatable pattern or one video:_\n\n"
+    "📊🟢 **Broad** — 5+ videos\n\n"
+    "📊🟡 **Narrow** — 2-4 videos\n\n"
+    "📊🔴 **Single-video** — 1 video (the number describes that video, "
+    "not a pattern)"
 )
 
 # Load data once for all pages.
@@ -300,90 +326,175 @@ def page_exec() -> None:
 
     st.divider()
 
-    st.header("The headline finding")
+    st.header("What this pilot can and can't tell you")
     col1, col2 = st.columns([2, 1])
     with col1:
         st.markdown(
-            "**Views and watch-intent appear to pull in different directions.**"
-            + confidence_badge("medium"),
-            unsafe_allow_html=True,
+            "**One pilot, 113 videos, 821 real audience comments after "
+            "spam removal — enough to spot contamination and generate "
+            "hypotheses, not enough to recommend a strategy.**"
         )
         st.markdown(
-            "The 27 highest-viewed videos (avg **215k views**, **586 real audience "
-            "comments**) show **18% high-intent** reactions — statistically stable. "
-            "A separate group of 11 lower-view videos (avg **15k views**, **35 "
-            "comments**) shows **~60% high-intent** (95% CI roughly 42–76%, so "
-            "the magnitude is uncertain). Different videos, different accounts, "
-            "different view bands — the two groups are distinct."
+            "The median video has ~5 real comments. Most account-level "
+            "rates have 95% confidence intervals wider than ±15 "
+            "percentage points — wide enough that the same data could "
+            "support opposite conclusions depending on which slice you "
+            "pick. The clearest signal in the data turned out to be a "
+            "**data-quality problem** (creator self-spam, see below), "
+            "not a content one."
         )
         st.markdown(
-            "**What it means for you:** if you optimize for views, you tend to "
-            "get eyeballs without active intent. If you optimize for intent, you "
-            "tend to get engaged audiences at lower reach. The *direction* is "
-            "solid; the *exact numbers* on the intent side would need 3-5x more "
-            "comments to be precise."
+            "**How to read this dashboard:** treat every finding below "
+            "as a hypothesis for campaign #2 to confirm or kill, not as "
+            "an answer. The one exception — the contamination finding — "
+            "is flagged explicitly. Everything else is directional."
         )
     with col2:
         _mini_scatter()
 
     st.divider()
 
-    st.header("What to do with this")
+    st.header("What we actually learned")
+
+    st.subheader("✅ The one robust finding")
+    st.markdown(
+        "**Comment-section gaming is real and material.** "
+        + confidence_badge("high")
+        + "<br><br>"
+        + "**Four creator accounts** ("
+        + account_link("spade.clipper") + ", "
+        + account_link("lilly.h_7") + ", "
+        + account_link("clipper_.media") + ", "
+        + account_link("sharp_clipper")
+        + ") were caught posting LLM-generated SEO paragraphs on their own "
+        + "videos. **~11% of all labeled comments** were creator self-spam, "
+        + "and it dominated the original rankings — three of those four "
+        + "accounts lost effectively all their 'audience engagement' after "
+        + "filtering. **Actionable now:** audit how payouts were calculated "
+        + "against this pilot, and add a self-comment filter to the pipeline "
+        + "before campaign #2.",
+        unsafe_allow_html=True,
+    )
+
+    st.divider()
+
+    st.subheader("🔬 Hypotheses worth testing in campaign #2")
+    st.caption(
+        "None of these clear the bar for a commitment. They're the leads "
+        "a second pilot should be *designed* to confirm or kill — not "
+        "findings to act on now."
+    )
 
     c1, c2, c3 = st.columns(3)
     with c1:
-        st.subheader("✅ Double down on")
         st.markdown(
-            '**"Movie name?" content** '
+            '**"Movie name?" content may drive intent** '
             + confidence_badge("medium")
             + sample_badge(35, "comments")
             + "<br><br>"
-            + "Videos where the dominant reaction is viewers trying to "
-            + "identify the source material. ~60% high-intent rate across "
-            + "11 videos — the only content type where both intent and "
-            + "reach show up meaningfully. "
-            + "<em>Direction solid; exact rate uncertain at n=35.</em>",
+            + "11 videos where viewers ask for the source material show "
+            + "~60% high-intent (CI 42-76%). But this may be a *passenger* "
+            + "signal — viewers might comment because the content hooked "
+            + "them, not because the comment itself indicates anything "
+            + "special. **Test:** commission 10+ videos explicitly "
+            + "designed to trigger source-ID questions and see if the "
+            + "rate holds.",
             unsafe_allow_html=True,
         )
     with c2:
-        st.subheader("🎯 Account bets")
         st.markdown(
             "**"
             + account_link("moovieshub.ig")
-            + "** "
-            + confidence_badge("high")
-            + sample_badge(87, "comments")
-            + "<br>"
-            + "Both **real reach** (~118k median views) and **real engagement** "
-            + "(46% pooled high-intent across 87 comments). The strongest "
-            + "both-sides bet in the pilot."
-            + "<br><br>"
-            + "**"
-            + account_link("interestingasfacts")
-            + "** "
+            + " had one strong video** "
             + confidence_badge("medium")
-            + sample_badge(50, "comments")
-            + "<br>"
-            + "Also shows both: ~227k median views with 24% high-intent across "
-            + "50 comments. Worth a directional bet, but n is about half of "
-            + "moovieshub — treat as a lead, not a commitment.",
+            + sample_badge(87, "comments")
+            + "<br><br>"
+            + "One post (220k views, 46% high-intent on 83 comments) is "
+            + "the pilot's best single both-sides example. The account's "
+            + "other video was an 18k-view dud. **Not an account pattern "
+            + "yet.** **Test:** get 3-5 more posts from this creator "
+            + "before committing budget.",
             unsafe_allow_html=True,
         )
     with c3:
-        st.subheader("⚠️ Watch out for")
         st.markdown(
-            "**Comment-section gaming** "
-            + confidence_badge("high")
+            "**Reach and intent may trade off** "
+            + confidence_badge("medium")
             + "<br><br>"
-            + "**Four creator accounts** ("
-            + account_link("spade.clipper") + ", "
-            + account_link("lilly.h_7") + ", "
-            + account_link("clipper_.media") + ", "
-            + account_link("sharp_clipper")
-            + ") were caught posting "
-            + "LLM-generated SEO paragraphs on their own videos. "
-            + "This inflated their rankings. Worth asking how payouts were "
-            + "calculated and whether others are doing the same.",
+            + "The 27 high-view videos sit at baseline ~18% intent; a "
+            + "separate group of 11 low-view videos hits ~60%. Different "
+            + "videos, different accounts — directionally a real split, "
+            + "but one pilot can't tell us whether this is a content "
+            + "choice or a confound. **Test:** sample 30+ videos per "
+            + "quadrant in campaign #2 so the split can be measured, "
+            + "not inferred.",
+            unsafe_allow_html=True,
+        )
+
+    st.divider()
+
+    st.header("How we'll make campaign #2 conclusive")
+    st.markdown(
+        "The pilot surfaced specific, fixable reasons the evidence is thin. "
+        "Each one has a concrete change for the next run:"
+    )
+
+    f1, f2 = st.columns(2)
+    with f1:
+        st.markdown(
+            "**📈 More videos, more accounts, more comments — sampled "
+            "deliberately**<br>"
+            "The three biggest gaps all come down to scale: only 1 of "
+            "20+ accounts clears 100 comments; the reach/intent split "
+            "rests on 11 videos; the 'Movie name?' hypothesis is 35 "
+            "comments across 11 videos. Campaign #2 needs roughly "
+            "**~1,000 additional labeled comments** concentrated on "
+            "~10 accounts in the 'both' or 'reach-only' buckets, plus "
+            "**30+ videos per reach quadrant** sampled on purpose (not "
+            "whichever videos happened to exist), plus **10+ "
+            "commissioned videos designed to trigger source-ID "
+            "comments** to test whether 'Movie name?' comments *cause* "
+            "intent or just ride along. Same workstream, three things "
+            "it buys us.",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            "<br>**🧹 Move the spam filter upstream of labeling**<br>"
+            "We did filter out the ~11% creator self-spam for this "
+            "report — but *after* the LLM had already labeled it and "
+            "after the themes/clusters were built on top of it. The "
+            "three filter rules (self-comment flag, cross-video "
+            "duplicate detection, known-creator username list) will "
+            "run *before* labeling in campaign #2 so the LLM never "
+            "sees contaminated rows. Cuts LLM spend and removes the "
+            "need to re-audit findings after the fact.",
+            unsafe_allow_html=True,
+        )
+    with f2:
+        st.markdown(
+            "**📈 Benchmark each video against its own account's "
+            "baseline**<br>"
+            "Right now we compare videos across accounts — so a 200k-view "
+            "post looks 'high reach' whether it came from an account that "
+            "usually gets 5k views (a massive hit) or one that usually "
+            "gets 500k (an underperformer). Campaign #2 will pull each "
+            "creator's recent-posts average and express every pilot video "
+            "as a **lift vs. that account's baseline**, not a raw number. "
+            "Same fix for comment volume. Separates 'content that worked "
+            "unusually well' from 'content on an already-big account.'",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            "<br>**🏷️ Audit the embeddings for residual spam influence "
+            "(likely low impact)**<br>"
+            "The original theme clusters were built *including* the "
+            "spam, so in principle themes like 'Father-Daughter "
+            "Relationships' could partly reflect SEO-paragraph content. "
+            "In practice we already re-clustered on the filtered data "
+            "and the surviving themes (Movie Name Requests, Praising "
+            "Smooth Execution) are coherent and stable — so a full "
+            "re-embed probably wouldn't change much. We'll do a "
+            "targeted audit rather than a rerun.",
             unsafe_allow_html=True,
         )
 
@@ -428,10 +539,22 @@ def _mini_scatter() -> None:
 # ---------------------------------------------------------------------------
 
 def page_two_audience() -> None:
-    st.title("The Two-Audience Problem")
+    st.title("Hypothesis: Do reach and intent trade off?")
+    st.info(
+        "**This page explores a hypothesis, not a finding.** The reach "
+        "audience (big-view videos) sits at **~18% high-intent**, which is "
+        "the overall pilot baseline — reach videos are *baseline-intent*, "
+        "not *low-intent*. The 'different directions' idea rests mostly on "
+        "a small cluster of low-view videos that hits ~60% (n=35, 95% CI "
+        "42–76%) — on different accounts, different content, different "
+        "view bands. The direction is suggestive but one pilot can't tell "
+        "us whether it's a real content trade-off or a confound. "
+        "Campaign #2 is designed to answer this head-on by sampling "
+        "30+ videos per reach quadrant."
+    )
     st.markdown(
-        "**The videos that rack up views are not the videos that rack up "
-        "intent comments.** "
+        "**The question:** do the videos that rack up views tend to rack "
+        "up fewer intent comments? "
         + confidence_badge("medium"),
         unsafe_allow_html=True,
     )
@@ -440,19 +563,10 @@ def page_two_audience() -> None:
         "watch the source material (\"Movie name?\", \"Where can I find this?\"), "
         "versus passive emoji reactions and friend tags."
     )
-    st.info(
-        "**Read before quoting this page.** The reach audience "
-        "(big-view videos) sits at **~18% high-intent**, which is the overall "
-        "pilot baseline — reach videos are *baseline-intent*, not *low-intent*. "
-        "The 'different directions' claim rests mostly on a small cluster of "
-        "low-view videos that hits ~60% (n=35, 95% CI 42–76%) — the direction "
-        "is real but the exact magnitude is uncertain. One pilot. Don't "
-        "over-rotate."
-    )
 
     st.divider()
 
-    st.subheader("Side-by-side comparison of the two main audience types")
+    st.subheader("What the two ends of the data look like")
 
     # Use the two biggest clusters for the comparison
     # Cluster 1 = high-reach, Cluster 2 (media-id) = high-intent (cluster IDs may shift)
@@ -592,95 +706,161 @@ def page_accounts() -> None:
         "**Before filtering**, the leaderboard was dominated by accounts "
         "posting spam on their own videos — those are now removed."
     )
+    st.caption(
+        "**59 creator accounts** posted videos in the pilot. 39 appear "
+        "below — the other 20 had zero scraped comments across their "
+        "combined 51 videos, so there's no signal to analyze."
+    )
     st.divider()
 
     if accounts_df.empty:
         st.warning("Run the pipeline first to generate account_rollup.csv")
         return
 
-    # Only accounts with real comments & tagged with confidence
+    st.info(
+        "**Two-axis confidence.** An account's intent-rate has two separate "
+        "uncertainties: (1) how well we know the *rate itself* — a function "
+        "of comment count — and (2) whether the rate generalizes to the "
+        "account's *next* video — a function of how many videos we've "
+        "seen. A creator with 87 comments on 2 videos has a precise "
+        "rate for those 2 videos but tells us little about the account's "
+        "repeatable pattern. Both badges shown below."
+    )
+
     df = accounts_df[accounts_df["has_nlp_data"]].copy()
     df["total_labeled_intent"] = df["total_labeled_intent"].fillna(0).astype(int)
+    df["n_videos"] = df["n_videos"].astype(int)
 
-    def conf_for(row) -> str:
-        n = row["total_labeled_intent"]
+    def rate_conf(n: int) -> str:
         if n >= 30:
             return "high"
         if n >= 10:
             return "medium"
         return "low"
 
-    df["_conf"] = df.apply(conf_for, axis=1)
+    def pattern_conf(nv: int) -> str:
+        if nv >= 5:
+            return "broad"
+        if nv >= 2:
+            return "narrow"
+        return "single"
 
-    st.subheader("Accounts with enough comments to rank")
-    robust = df[df["_conf"] == "high"].sort_values(
-        "pooled_high_intent_rate", ascending=False
+    df["_rate"] = df["total_labeled_intent"].apply(rate_conf)
+    df["_pattern"] = df["n_videos"].apply(pattern_conf)
+
+    def render_account_card(r) -> None:
+        c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
+        c1.markdown(
+            "**" + account_link(r["profile"]) + "**"
+            + confidence_badge(r["_rate"])
+            + sample_badge(int(r["total_labeled_intent"]), "comments")
+            + pattern_badge(int(r["n_videos"])),
+            unsafe_allow_html=True,
+        )
+        c2.metric("Videos", int(r["n_videos"]))
+        c3.metric(
+            "Median views",
+            f"{int(r['median_views']):,}"
+            if pd.notna(r["median_views"]) else "n/a",
+        )
+        c4.metric(
+            "High-intent",
+            f"{r['pooled_high_intent_rate']*100:.0f}%",
+        )
+
+    st.subheader("🏆 Strong bets — robust rate AND broad video pattern")
+    strong = df[(df["_rate"] == "high") & (df["_pattern"] == "broad")]
+    if strong.empty:
+        st.warning(
+            "**No accounts currently meet this bar.** Every account-level "
+            "claim in the pilot rests on 1-4 videos. This is the clearest "
+            "statement of why campaign #2 needs more videos per creator, "
+            "not just more comments."
+        )
+    else:
+        for _, r in strong.sort_values(
+            "pooled_high_intent_rate", ascending=False
+        ).iterrows():
+            with st.container():
+                render_account_card(r)
+
+    st.divider()
+    st.subheader(
+        "🟡 Promising — robust rate but narrow/single video pattern"
     )
-    for _, r in robust.iterrows():
+    st.caption(
+        "We know the comment-level rate precisely, but across only 1-4 "
+        "videos. The rate may not repeat on the next post. Treat as "
+        "leads worth sampling more videos from, not committed bets."
+    )
+    promising = df[
+        (df["_rate"] == "high")
+        & (df["_pattern"].isin(["narrow", "single"]))
+    ].sort_values("pooled_high_intent_rate", ascending=False)
+    for _, r in promising.iterrows():
         with st.container():
-            c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
-            c1.markdown(
-                "**" + account_link(r["profile"]) + "**"
-                + confidence_badge("high")
-                + sample_badge(int(r["total_labeled_intent"]), "comments"),
-                unsafe_allow_html=True,
-            )
-            c2.metric("Videos", int(r["n_videos"]))
-            c3.metric(
-                "Median views",
-                f"{int(r['median_views']):,}"
-                if pd.notna(r["median_views"]) else "n/a",
-            )
-            c4.metric(
-                "High-intent",
-                f"{r['pooled_high_intent_rate']*100:.0f}%",
-            )
+            render_account_card(r)
             if r["profile"] == "moovieshub.ig":
-                st.success(
-                    "⭐ **Strongest both-sides bet.** Real reach (~118k "
-                    "median views) plus real engagement (46% on 87 comments). "
-                    "Evidence-backed bet for the next campaign."
+                st.info(
+                    "_83 of 87 comments come from one video (220k views, "
+                    "46% intent). The other video was an 18k-view post "
+                    "with 4 comments at 75%. The account's headline "
+                    "number is one video's comment section — get 3-5 "
+                    "more posts from this creator before committing._"
                 )
             elif r["profile"] == "mensetstandards":
                 st.warning(
-                    "⚠️ **Extreme reach-without-intent.** 529k views but only "
-                    "3% high-intent across 69 comments — audience scrolls by. "
-                    "High reach is not a proxy for campaign fit."
+                    "_529k views on **one** video with 3% high-intent "
+                    "across 69 comments. Tells us about that video, "
+                    "not the account. Still, single-video reach-only "
+                    "signal is striking — worth sampling more._"
                 )
 
     st.divider()
-    st.subheader("Thinner sample — treat as leads, not rankings")
+    st.subheader(
+        "📊 Broad video pattern but thin per-video data — cheap to upgrade"
+    )
     st.caption(
-        "These accounts have too few comments to rank confidently. "
-        "A single comment flipping would move them significantly."
+        "5+ videos but <30 labeled comments total. Labeling more of "
+        "their existing comment sections (cheaper than finding new "
+        "creators) could move them into 'strong bets.'"
     )
-    medium = df[df["_conf"] == "medium"].sort_values(
-        "pooled_high_intent_rate", ascending=False
-    )
-    thin = df[df["_conf"] == "low"].sort_values(
-        "total_labeled_intent", ascending=False
-    )
-    m_table = medium[
-        [
-            "profile",
-            "n_videos",
-            "total_labeled_intent",
-            "pooled_high_intent_rate",
-            "median_views",
-        ]
-    ].rename(columns={
-        "total_labeled_intent": "comments",
-        "pooled_high_intent_rate": "intent_rate",
-    })
-    st.dataframe(m_table, hide_index=True, width='stretch')
+    cheap_upgrade = df[
+        (df["_pattern"] == "broad")
+        & (df["_rate"].isin(["medium", "low"]))
+    ].sort_values("n_videos", ascending=False)
+    for _, r in cheap_upgrade.iterrows():
+        with st.container():
+            render_account_card(r)
 
     st.divider()
-    st.subheader("Too thin to say anything")
-    t_table = thin[
+    st.subheader("Directional — narrow videos, mid comment count")
+    directional = df[
+        (df["_rate"] == "medium") & (df["_pattern"].isin(["narrow", "single"]))
+    ].sort_values("pooled_high_intent_rate", ascending=False)
+    if directional.empty:
+        st.caption("_None._")
+    else:
+        d_table = directional[
+            [
+                "profile", "n_videos", "total_labeled_intent",
+                "pooled_high_intent_rate", "median_views",
+            ]
+        ].rename(columns={
+            "total_labeled_intent": "comments",
+            "pooled_high_intent_rate": "intent_rate",
+        })
+        st.dataframe(d_table, hide_index=True, width='stretch')
+
+    st.divider()
+    st.subheader("🔴 Thin on both axes — leads at best")
+    thin_both = df[
+        (df["_rate"] == "low")
+        & (df["_pattern"].isin(["narrow", "single"]))
+    ].sort_values("total_labeled_intent", ascending=False)
+    t_table = thin_both[
         [
-            "profile",
-            "n_videos",
-            "total_labeled_intent",
+            "profile", "n_videos", "total_labeled_intent",
             "pooled_high_intent_rate",
         ]
     ].rename(columns={
@@ -722,6 +902,13 @@ def page_reach_vs_intent() -> None:
         "**intent** (how many of those viewers actively want to watch the "
         "source). Four buckets emerge."
     )
+    st.info(
+        "**Read the pattern badge alongside the quadrant.** An account in "
+        "the top-right with a 📊🔴 SINGLE-VIDEO badge is a promising "
+        "single post, not a repeatable account pattern. The quadrant "
+        "tells you where the rate sits; the pattern badge tells you how "
+        "far you can generalize from it."
+    )
     st.divider()
 
     if accounts_df.empty:
@@ -730,6 +917,7 @@ def page_reach_vs_intent() -> None:
 
     df = accounts_df[accounts_df["has_nlp_data"]].copy()
     df["total_labeled_intent"] = df["total_labeled_intent"].fillna(0).astype(int)
+    df["n_videos"] = df["n_videos"].astype(int)
 
     def conf_for(n: int) -> str:
         if n >= 30:
@@ -738,7 +926,15 @@ def page_reach_vs_intent() -> None:
             return "medium"
         return "low"
 
+    def pattern_for(nv: int) -> str:
+        if nv >= 5:
+            return "broad"
+        if nv >= 2:
+            return "narrow"
+        return "single"
+
     df["_conf"] = df["total_labeled_intent"].apply(conf_for)
+    df["_pattern"] = df["n_videos"].apply(pattern_for)
 
     # Quadrant thresholds. Pilot baseline intent ≈ 18%; pilot median views
     # across accounts-with-NLP ≈ 7.7k.
@@ -808,13 +1004,13 @@ def page_reach_vs_intent() -> None:
     def fmt_account_row(r) -> str:
         badge = confidence_badge(r["_conf"])
         sb = sample_badge(int(r["total_labeled_intent"]), "comments")
+        pb = pattern_badge(int(r["n_videos"]))
         views = (f"{int(r['median_views']):,}"
                  if pd.notna(r["median_views"]) else "n/a")
         return (
-            f"- **{account_link(r['profile'])}** {badge} {sb} · "
+            f"- **{account_link(r['profile'])}** {badge} {sb} {pb} · "
             f"{views} median views · "
-            f"{r['pooled_high_intent_rate']*100:.0f}% high-intent "
-            f"({r['n_videos']} video{'s' if r['n_videos']!=1 else ''})"
+            f"{r['pooled_high_intent_rate']*100:.0f}% high-intent"
         )
 
     st.subheader("The four buckets")
@@ -822,7 +1018,12 @@ def page_reach_vs_intent() -> None:
     q_both = df[df["_quadrant"] == "both"].sort_values(
         "pooled_high_intent_rate", ascending=False)
     st.markdown("### 🏆 Both — reach AND intent")
-    st.caption("The gold bucket. These are where campaign #2 budget should go first.")
+    st.caption(
+        "The bucket campaign #2 should sample more videos from. **None of "
+        "the accounts here currently have BROAD video coverage** — every "
+        "'both' account is narrow or single-video. These are promising "
+        "leads, not committed bets."
+    )
     if q_both.empty:
         st.write("_No accounts currently in this bucket._")
     else:
@@ -1433,27 +1634,6 @@ only creator self-posts.
 
     st.divider()
 
-    st.header("Attribution")
-    unknowns = videos_df[videos_df["profile"].isna()]
-    apify_fallback = videos_df[videos_df["profile_source"] == "apify_fallback"] \
-        if "profile_source" in videos_df.columns else videos_df.iloc[0:0]
-    if len(unknowns) > 0:
-        st.markdown(
-            f"**{len(unknowns)} videos have no account attribution** in any "
-            f"source. Total views from unattributed videos: "
-            f"**{int(unknowns['views'].sum(skipna=True)):,}**."
-        )
-        st.caption("Fix upstream: include these videos in the clip tracking.")
-    else:
-        st.success(
-            f"All {len(videos_df)} analyzed videos are attributed to a creator. "
-            f"{len(apify_fallback)} of them were backfilled from the raw Apify "
-            f"caption data (they're in the broader submissions feed but not in "
-            f"the registered-creator roster)."
-        )
-
-    st.divider()
-
     st.header("Things we did NOT fix")
     st.markdown(
         """
@@ -1471,6 +1651,10 @@ Transparent about what's *not* in this analysis:
   not authoritative.
 - **Payout data is sparse** — only 27 of 113 videos are in the
   submissions feed. Any payout-based finding is thin.
+- **20 of 50 roster accounts** had zero scraped comments across 51
+  combined videos and are absent from the analysis. No insight into
+  why — could be scrape failure, short-lived posts, or low-engagement
+  content. Worth investigating before campaign #2.
 - **Non-English comments** were labeled by the same English rubric.
   Meaningful share of comments are in other languages.
         """
@@ -1547,7 +1731,7 @@ def page_browse() -> None:
 
 PAGES = {
     "Executive Summary": page_exec,
-    "The Two-Audience Problem": page_two_audience,
+    "Hypothesis: Reach vs Intent": page_two_audience,
     "Accounts — who to bet on": page_accounts,
     "Reach × Intent — who to bet on": page_reach_vs_intent,
     "Themes — what works": page_themes,
