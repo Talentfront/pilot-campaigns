@@ -60,7 +60,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = Path(__file__).resolve().parent
 COMMENT_CSV = ANALYSIS_DIR / "analysis_comment_level_filtered.csv"
 OUT_CSV = ANALYSIS_DIR / "canonical_reclustered.csv"
-OUT_REPORT = ANALYSIS_DIR / "recluster_report.md"
+OUT_REPORT = ANALYSIS_DIR / "reports" / "recluster_report.md"
 EMBEDDINGS_CACHE = ANALYSIS_DIR / "recluster_embeddings.npy"
 CANONICAL_CACHE = ANALYSIS_DIR / "recluster_canonicals.csv"
 

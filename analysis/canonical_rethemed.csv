@@ -1,0 +1,454 @@
+canonical_id,old_theme_label,new_cluster_id,new_theme_label,coherence,supports_share,new_theme_description
+,,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c0,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c10,Smooth and Youthful,4,Smooth Move Praise,0.7562,0.9000,"Comments emphasizing how smooth a particular action or line was, with 'that was smooth' as the core phrase."
+c100,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c101,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c102,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c103,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c104,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c105,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c106,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c107,Smooth and Youthful,26,Looks 17 Years Old,0.8627,1.0000,Comments noting that someone looks 17 years old despite being older.
+c108,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c109,Exclamations and Questions,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c11,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c110,Personal Statements,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c111,Smooth and Youthful,26,Looks 17 Years Old,0.8627,1.0000,Comments noting that someone looks 17 years old despite being older.
+c112,Smooth and Youthful,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c113,Smooth and Youthful,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c114,Smooth and Youthful,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c115,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c116,Personal Statements,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c117,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c118,Personal Statements,54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c119,Step-by-Step Instructions,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c12,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c120,Step-by-Step Instructions,37,Flight Preparation Steps,0.6720,1.0000,"Comments listing prerequisite steps for getting on a flight (get job, earn money, book ticket, board)."
+c121,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c122,Step-by-Step Instructions,36,Other,0.6831,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c123,Step-by-Step Instructions,37,Flight Preparation Steps,0.6720,1.0000,"Comments listing prerequisite steps for getting on a flight (get job, earn money, book ticket, board)."
+c124,Step-by-Step Instructions,37,Flight Preparation Steps,0.6720,1.0000,"Comments listing prerequisite steps for getting on a flight (get job, earn money, book ticket, board)."
+c125,Step-by-Step Instructions,37,Flight Preparation Steps,0.6720,1.0000,"Comments listing prerequisite steps for getting on a flight (get job, earn money, book ticket, board)."
+c126,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c127,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c128,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c129,Smooth and Youthful,5,Other,0.6895,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c13,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c130,Step-by-Step Instructions,21,Other,0.5410,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c131,Step-by-Step Instructions,8,Where to Watch Requests,0.7067,1.0000,Comments asking where to find or watch the content being discussed.
+c132,Step-by-Step Instructions,17,Craig Name Jokes,0.7394,1.0000,"Jokes and wordplay about the name 'Craig,' including Craigslist puns."
+c133,Smooth and Youthful,25,Generic Positive Reactions,0.7244,1.0000,"Brief positive comments like 'nice,' 'cute,' and compliments on photos/lighting."
+c134,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c135,Step-by-Step Instructions,36,Other,0.6831,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c136,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c137,Smooth and Youthful,27,Looks 17 Years Old,0.8333,1.0000,"Comments about a 37-year-old model who looks 17, or references to someone claiming to look 17."
+c138,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c139,Wordplay on 'Knee',48,Kneed vs Need Wordplay,0.6754,0.9000,"Comments discussing the word 'kneed' (hit with knee) and its potential confusion with 'need,' debating proper usage."
+c14,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c140,Positive Affirmations,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c141,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c142,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c143,Smooth and Youthful,17,Craig Name Jokes,0.7394,1.0000,"Jokes and wordplay about the name 'Craig,' including Craigslist puns."
+c144,Media Identification,11,Content Name Requests,0.8401,1.0000,Comments specifically asking for the name of a series and where to watch it.
+c145,Personal Statements,1,Other,0.5150,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c146,AI or Fake Content,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c147,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c148,Observations on Women,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c149,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c15,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c150,Step-by-Step Instructions,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c151,Smooth and Youthful,26,Looks 17 Years Old,0.8627,1.0000,Comments noting that someone looks 17 years old despite being older.
+c152,Exclamations and Questions,29,English Language Criticism,0.6770,1.0000,Comments criticizing or expressing frustration with the English language and its confusing rules.
+c153,Observations on Women,54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c154,Smooth and Youthful,4,Smooth Move Praise,0.7562,0.9000,"Comments emphasizing how smooth a particular action or line was, with 'that was smooth' as the core phrase."
+c155,Step-by-Step Instructions,20,Other,0.6300,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c156,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c157,Media Identification,13,Only Happens in Movies,0.7078,1.0000,"Comments noting that the depicted scenario only occurs in fictional movies, not real life."
+c158,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c159,Exclamations and Questions,24,New Word Discovery,0.7532,1.0000,Comments expressing surprise at encountering a new or unfamiliar word.
+c16,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c160,Positive Affirmations,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c161,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c162,Positive Affirmations,46,Other,0.6940,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c163,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c164,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c165,Step-by-Step Instructions,12,Acknowledging Mistakes or Errors,0.6915,0.8500,"Comments recognizing or admitting to mistakes, errors, or being wrong about something."
+c166,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c167,Speeding and Traffic Stops,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c168,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c169,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c17,Wordplay on 'Knee',55,Kneed vs Need Wordplay,0.7836,1.0000,"Brief comments making puns or references involving the word 'knee' (knee grow, knee game, brain in knee)."
+c170,Personal Statements,19,Hostile Dismissive Reactions,0.6268,0.8500,Aggressive or dismissive comments telling people off or expressing hatred for certain behaviors.
+c171,Step-by-Step Instructions,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c172,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c173,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c174,Personal Statements,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c175,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c176,Personal Statements,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c177,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c178,AI or Fake Content,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c179,Conflict and Consequences,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c18,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c180,Speeding and Traffic Stops,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c181,Speeding and Traffic Stops,22,Other,0.6081,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c182,Conflict and Consequences,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c183,Conflict and Consequences,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c184,Media Identification,10,Content Name Requests,0.8378,1.0000,Comments asking for the title of the show or movie being shown.
+c185,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c186,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c187,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c188,Step-by-Step Instructions,49,Other,0.5639,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c189,Positive Affirmations,49,Other,0.5639,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c19,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c190,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c191,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c192,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c193,Smooth and Youthful,25,Generic Positive Reactions,0.7244,1.0000,"Brief positive comments like 'nice,' 'cute,' and compliments on photos/lighting."
+c194,Personal Statements,22,Other,0.6081,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c195,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c196,Step-by-Step Instructions,21,Other,0.5410,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c197,Observations on Women,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c198,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c199,Speeding and Traffic Stops,28,Traffic Stop Rights Debate,0.6007,0.8000,"Comments debating police traffic stops, speeding, rights during stops, and quota systems."
+c2,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c20,Exclamations and Questions,24,New Word Discovery,0.7532,1.0000,Comments expressing surprise at encountering a new or unfamiliar word.
+c200,Observations on Women,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c201,Observations on Women,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c202,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c203,Exclamations and Questions,17,Craig Name Jokes,0.7394,1.0000,"Jokes and wordplay about the name 'Craig,' including Craigslist puns."
+c204,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c205,Step-by-Step Instructions,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c206,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c207,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c208,Step-by-Step Instructions,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c209,Step-by-Step Instructions,19,Hostile Dismissive Reactions,0.6268,0.8500,Aggressive or dismissive comments telling people off or expressing hatred for certain behaviors.
+c21,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c210,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c211,Observations on Women,17,Craig Name Jokes,0.7394,1.0000,"Jokes and wordplay about the name 'Craig,' including Craigslist puns."
+c212,Observations on Women,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c213,Personal Statements,52,Kneed vs Need Wordplay,0.6553,0.8500,Comments making jokes or observations about the kneed/need wordplay in different contexts.
+c214,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c215,Exclamations and Questions,29,English Language Criticism,0.6770,1.0000,Comments criticizing or expressing frustration with the English language and its confusing rules.
+c216,Observations on Women,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c217,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c218,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c219,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c220,Observations on Women,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c221,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c222,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c223,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c224,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c225,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c226,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c227,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c228,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c229,Observations on Women,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c23,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c230,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c231,Observations on Women,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c232,Smooth and Youthful,38,Other,0.7342,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c233,Step-by-Step Instructions,19,Hostile Dismissive Reactions,0.6268,0.8500,Aggressive or dismissive comments telling people off or expressing hatred for certain behaviors.
+c234,Observations on Women,6,Critical Women Comments,0.6719,1.0000,"Derogatory comments attacking women as stupid, entitled, or problematic, using slurs and generalizations."
+c235,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c236,Observations on Women,6,Critical Women Comments,0.6719,1.0000,"Derogatory comments attacking women as stupid, entitled, or problematic, using slurs and generalizations."
+c237,Step-by-Step Instructions,12,Acknowledging Mistakes or Errors,0.6915,0.8500,"Comments recognizing or admitting to mistakes, errors, or being wrong about something."
+c238,Observations on Women,6,Critical Women Comments,0.6719,1.0000,"Derogatory comments attacking women as stupid, entitled, or problematic, using slurs and generalizations."
+c239,Observations on Women,6,Critical Women Comments,0.6719,1.0000,"Derogatory comments attacking women as stupid, entitled, or problematic, using slurs and generalizations."
+c24,Step-by-Step Instructions,54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c240,Smooth and Youthful,22,Other,0.6081,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c241,Speeding and Traffic Stops,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c242,Speeding and Traffic Stops,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c243,Smooth and Youthful,13,Only Happens in Movies,0.7078,1.0000,"Comments noting that the depicted scenario only occurs in fictional movies, not real life."
+c244,Smooth and Youthful,46,Other,0.6940,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c245,Speeding and Traffic Stops,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c246,Smooth and Youthful,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c247,Wordplay on 'Knee',47,Kneed vs Need Wordplay,0.6855,0.8500,"Comments explaining that 'kneed' means hitting someone with a knee, with discussion of the term."
+c248,Personal Statements,48,Kneed vs Need Wordplay,0.6754,0.9000,"Comments discussing the word 'kneed' (hit with knee) and its potential confusion with 'need,' debating proper usage."
+c249,Wordplay on 'Knee',48,Kneed vs Need Wordplay,0.6754,0.9000,"Comments discussing the word 'kneed' (hit with knee) and its potential confusion with 'need,' debating proper usage."
+c25,Step-by-Step Instructions,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c250,Wordplay on 'Knee',-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c251,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c252,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c253,Wordplay on 'Knee',48,Kneed vs Need Wordplay,0.6754,0.9000,"Comments discussing the word 'kneed' (hit with knee) and its potential confusion with 'need,' debating proper usage."
+c254,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c255,Exclamations and Questions,24,New Word Discovery,0.7532,1.0000,Comments expressing surprise at encountering a new or unfamiliar word.
+c256,Wordplay on 'Knee',53,Kneed vs Need Wordplay,0.6938,1.0000,Comments joking about intentionally kneeing people as a flirting or social strategy.
+c257,Step-by-Step Instructions,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c258,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c259,Observations on Women,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c26,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c260,Positive Affirmations,50,Other,0.7095,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c261,Personal Statements,19,Hostile Dismissive Reactions,0.6268,0.8500,Aggressive or dismissive comments telling people off or expressing hatred for certain behaviors.
+c262,Smooth and Youthful,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c263,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c264,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c265,AI or Fake Content,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c266,Observations on Women,40,Violent Hypothetical Reactions,0.5663,0.9000,"Comments suggesting violent actions like kicking someone out, killing, hijacking, or crashing."
+c267,Smooth and Youthful,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c268,Exclamations and Questions,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c269,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c27,Media Identification,10,Content Name Requests,0.8378,1.0000,Comments asking for the title of the show or movie being shown.
+c270,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c271,Exclamations and Questions,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c272,Positive Affirmations,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c273,Exclamations and Questions,38,Other,0.7342,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c274,Smooth and Youthful,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c275,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c276,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c277,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c278,Step-by-Step Instructions,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c279,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c28,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c280,Step-by-Step Instructions,14,Movie Existence Debate,0.5946,0.8500,Comments debating whether the content is from a real movie or is a short video/non-existent film.
+c281,Positive Affirmations,41,Negative One-Word Reactions,0.6988,1.0000,"Brief negative assessments: 'sheesh,' 'cringe,' 'cheeks,' 'creepy.'"
+c282,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c283,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c284,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c285,Positive Affirmations,41,Negative One-Word Reactions,0.6988,1.0000,"Brief negative assessments: 'sheesh,' 'cringe,' 'cheeks,' 'creepy.'"
+c286,Smooth and Youthful,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c287,Media Identification,10,Content Name Requests,0.8378,1.0000,Comments asking for the title of the show or movie being shown.
+c288,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c289,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c29,Exclamations and Questions,38,Other,0.7342,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c290,Smooth and Youthful,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c291,AI or Fake Content,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c292,Wordplay on 'Knee',47,Kneed vs Need Wordplay,0.6855,0.8500,"Comments explaining that 'kneed' means hitting someone with a knee, with discussion of the term."
+c293,Personal Statements,52,Kneed vs Need Wordplay,0.6553,0.8500,Comments making jokes or observations about the kneed/need wordplay in different contexts.
+c294,Media Identification,10,Content Name Requests,0.8378,1.0000,Comments asking for the title of the show or movie being shown.
+c295,AI or Fake Content,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c296,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c297,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c298,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c299,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c3,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c30,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c300,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c301,Smooth and Youthful,0,Compliments on Gameplay,0.7062,0.9500,"Comments praising someone's performance or skill in a game, using phrases like 'well played' and 'nice one'."
+c302,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c303,Smooth and Youthful,4,Smooth Move Praise,0.7562,0.9000,"Comments emphasizing how smooth a particular action or line was, with 'that was smooth' as the core phrase."
+c304,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c305,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c306,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c307,Positive Affirmations,12,Acknowledging Mistakes or Errors,0.6915,0.8500,"Comments recognizing or admitting to mistakes, errors, or being wrong about something."
+c308,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c309,Positive Affirmations,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c31,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c310,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c311,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c312,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c313,Positive Affirmations,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c314,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c315,Positive Affirmations,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c316,Positive Affirmations,41,Negative One-Word Reactions,0.6988,1.0000,"Brief negative assessments: 'sheesh,' 'cringe,' 'cheeks,' 'creepy.'"
+c317,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c318,Media Identification,14,Movie Existence Debate,0.5946,0.8500,Comments debating whether the content is from a real movie or is a short video/non-existent film.
+c319,Wordplay on 'Knee',48,Kneed vs Need Wordplay,0.6754,0.9000,"Comments discussing the word 'kneed' (hit with knee) and its potential confusion with 'need,' debating proper usage."
+c32,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c320,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c321,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c322,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c323,Wordplay on 'Knee',55,Kneed vs Need Wordplay,0.7836,1.0000,"Brief comments making puns or references involving the word 'knee' (knee grow, knee game, brain in knee)."
+c324,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c325,Media Identification,14,Movie Existence Debate,0.5946,0.8500,Comments debating whether the content is from a real movie or is a short video/non-existent film.
+c326,Exclamations and Questions,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c327,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c328,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c329,Positive Affirmations,0,Compliments on Gameplay,0.7062,0.9500,"Comments praising someone's performance or skill in a game, using phrases like 'well played' and 'nice one'."
+c33,Step-by-Step Instructions,36,Other,0.6831,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c330,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c331,Personal Statements,21,Other,0.5410,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c332,Exclamations and Questions,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c334,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c336,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c337,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c338,Step-by-Step Instructions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c339,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c34,Exclamations and Questions,29,English Language Criticism,0.6770,1.0000,Comments criticizing or expressing frustration with the English language and its confusing rules.
+c340,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c341,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c342,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c343,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c344,Observations on Women,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c345,Personal Statements,22,Other,0.6081,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c347,Media Identification,32,Content Name Requests,0.7451,0.9000,Comments asking which movie is shown or discussing movie quality.
+c348,Personal Statements,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c349,Step-by-Step Instructions,12,Acknowledging Mistakes or Errors,0.6915,0.8500,"Comments recognizing or admitting to mistakes, errors, or being wrong about something."
+c35,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c350,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c351,Step-by-Step Instructions,22,Other,0.6081,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c352,Personal Statements,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c353,Personal Statements,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c354,Media Identification,14,Movie Existence Debate,0.5946,0.8500,Comments debating whether the content is from a real movie or is a short video/non-existent film.
+c356,Media Identification,8,Where to Watch Requests,0.7067,1.0000,Comments asking where to find or watch the content being discussed.
+c357,Media Identification,14,Movie Existence Debate,0.5946,0.8500,Comments debating whether the content is from a real movie or is a short video/non-existent film.
+c358,Media Identification,14,Movie Existence Debate,0.5946,0.8500,Comments debating whether the content is from a real movie or is a short video/non-existent film.
+c359,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c36,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c360,Personal Statements,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c361,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c362,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c363,Personal Statements,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c364,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c365,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c366,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c367,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c368,Positive Affirmations,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c369,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c37,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c370,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c371,Media Identification,8,Where to Watch Requests,0.7067,1.0000,Comments asking where to find or watch the content being discussed.
+c372,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c373,Personal Statements,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c374,Media Identification,32,Content Name Requests,0.7451,0.9000,Comments asking which movie is shown or discussing movie quality.
+c375,Media Identification,11,Content Name Requests,0.8401,1.0000,Comments specifically asking for the name of a series and where to watch it.
+c376,Personal Statements,40,Violent Hypothetical Reactions,0.5663,0.9000,"Comments suggesting violent actions like kicking someone out, killing, hijacking, or crashing."
+c377,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c378,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c379,Positive Affirmations,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c38,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c380,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c381,Positive Affirmations,41,Negative One-Word Reactions,0.6988,1.0000,"Brief negative assessments: 'sheesh,' 'cringe,' 'cheeks,' 'creepy.'"
+c382,Positive Affirmations,25,Generic Positive Reactions,0.7244,1.0000,"Brief positive comments like 'nice,' 'cute,' and compliments on photos/lighting."
+c383,Wordplay on 'Knee',53,Kneed vs Need Wordplay,0.6938,1.0000,Comments joking about intentionally kneeing people as a flirting or social strategy.
+c384,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c385,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c386,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c387,Observations on Women,40,Violent Hypothetical Reactions,0.5663,0.9000,"Comments suggesting violent actions like kicking someone out, killing, hijacking, or crashing."
+c388,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c389,Step-by-Step Instructions,40,Violent Hypothetical Reactions,0.5663,0.9000,"Comments suggesting violent actions like kicking someone out, killing, hijacking, or crashing."
+c39,Smooth and Youthful,4,Smooth Move Praise,0.7562,0.9000,"Comments emphasizing how smooth a particular action or line was, with 'that was smooth' as the core phrase."
+c390,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c391,Step-by-Step Instructions,49,Other,0.5639,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c392,Personal Statements,19,Hostile Dismissive Reactions,0.6268,0.8500,Aggressive or dismissive comments telling people off or expressing hatred for certain behaviors.
+c393,Observations on Women,40,Violent Hypothetical Reactions,0.5663,0.9000,"Comments suggesting violent actions like kicking someone out, killing, hijacking, or crashing."
+c394,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c395,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c397,Step-by-Step Instructions,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c398,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c399,Step-by-Step Instructions,36,Other,0.6831,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c4,Wordplay on 'Knee',48,Kneed vs Need Wordplay,0.6754,0.9000,"Comments discussing the word 'kneed' (hit with knee) and its potential confusion with 'need,' debating proper usage."
+c40,Exclamations and Questions,0,Compliments on Gameplay,0.7062,0.9500,"Comments praising someone's performance or skill in a game, using phrases like 'well played' and 'nice one'."
+c400,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c401,Smooth and Youthful,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c402,Smooth and Youthful,26,Looks 17 Years Old,0.8627,1.0000,Comments noting that someone looks 17 years old despite being older.
+c403,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c404,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c405,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c406,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c407,Media Identification,8,Where to Watch Requests,0.7067,1.0000,Comments asking where to find or watch the content being discussed.
+c408,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c409,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c41,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c410,Exclamations and Questions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c412,Positive Affirmations,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c413,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c416,Media Identification,32,Content Name Requests,0.7451,0.9000,Comments asking which movie is shown or discussing movie quality.
+c417,Media Identification,11,Content Name Requests,0.8401,1.0000,Comments specifically asking for the name of a series and where to watch it.
+c418,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c419,Step-by-Step Instructions,20,Other,0.6300,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c42,Speeding and Traffic Stops,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c420,Smooth and Youthful,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c421,Smooth and Youthful,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c422,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c423,Smooth and Youthful,27,Looks 17 Years Old,0.8333,1.0000,"Comments about a 37-year-old model who looks 17, or references to someone claiming to look 17."
+c424,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c426,Exclamations and Questions,16,Content Name Requests,0.8531,1.0000,"Brief comments asking for a name, likely of a person, show, or movie."
+c428,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c429,Wordplay on 'Knee',47,Kneed vs Need Wordplay,0.6855,0.8500,"Comments explaining that 'kneed' means hitting someone with a knee, with discussion of the term."
+c43,Personal Statements,42,Other,0.5359,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c430,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c431,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c432,Media Identification,34,Content Name Requests,0.8339,1.0000,Comments asking for the title or name of the movie being shown.
+c433,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c434,Smooth and Youthful,27,Looks 17 Years Old,0.8333,1.0000,"Comments about a 37-year-old model who looks 17, or references to someone claiming to look 17."
+c436,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c437,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c438,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c439,Step-by-Step Instructions,50,Other,0.7095,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c44,Positive Affirmations,19,Hostile Dismissive Reactions,0.6268,0.8500,Aggressive or dismissive comments telling people off or expressing hatred for certain behaviors.
+c440,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c441,Observations on Women,7,Critical Women Comments,0.6437,0.8500,"Comments making generalizations or critical observations about women's behavior, often dismissive or stereotyping."
+c442,Wordplay on 'Knee',55,Kneed vs Need Wordplay,0.7836,1.0000,"Brief comments making puns or references involving the word 'knee' (knee grow, knee game, brain in knee)."
+c444,Positive Affirmations,51,Other,0.7598,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c445,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c446,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c447,Personal Statements,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c448,Smooth and Youthful,23,MatPat Lookalike Debate,0.5817,0.8000,Comments debating whether someone in the video looks like MatPat or other people.
+c449,Positive Affirmations,46,Other,0.6940,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c45,Step-by-Step Instructions,20,Other,0.6300,0.3000,"LLM route-to-Other: supports=30%, mixed_flag=True."
+c451,Smooth and Youthful,27,Looks 17 Years Old,0.8333,1.0000,"Comments about a 37-year-old model who looks 17, or references to someone claiming to look 17."
+c452,Exclamations and Questions,44,Requesting Explanation or Context,0.7823,1.0000,"Comments asking what the content is, what it's from, or requesting the source."
+c453,Exclamations and Questions,38,Other,0.7342,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c456,Wordplay on 'Knee',47,Kneed vs Need Wordplay,0.6855,0.8500,"Comments explaining that 'kneed' means hitting someone with a knee, with discussion of the term."
+c457,Exclamations and Questions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c458,Observations on Women,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c46,Positive Affirmations,50,Other,0.7095,0.2000,"LLM route-to-Other: supports=20%, mixed_flag=True."
+c463,Personal Statements,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c466,Step-by-Step Instructions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c47,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c470,Positive Affirmations,51,Other,0.7598,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c471,Media Identification,32,Content Name Requests,0.7451,0.9000,Comments asking which movie is shown or discussing movie quality.
+c474,Media Identification,10,Content Name Requests,0.8378,1.0000,Comments asking for the title of the show or movie being shown.
+c476,Media Identification,32,Content Name Requests,0.7451,0.9000,Comments asking which movie is shown or discussing movie quality.
+c478,Step-by-Step Instructions,18,Cannot Find Content,0.6331,0.8000,Comments expressing frustration about being unable to locate or find the referenced content online.
+c479,Exclamations and Questions,43,Requesting Explanation or Context,0.7245,0.9500,"Comments asking for explanation, context, or expressing not understanding what happened."
+c48,Positive Affirmations,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c480,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c481,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c49,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c5,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c50,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c51,Smooth and Youthful,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c52,Smooth and Youthful,0,Compliments on Gameplay,0.7062,0.9500,"Comments praising someone's performance or skill in a game, using phrases like 'well played' and 'nice one'."
+c53,Smooth and Youthful,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c54,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c55,Smooth and Youthful,25,Generic Positive Reactions,0.7244,1.0000,"Brief positive comments like 'nice,' 'cute,' and compliments on photos/lighting."
+c56,Smooth and Youthful,0,Compliments on Gameplay,0.7062,0.9500,"Comments praising someone's performance or skill in a game, using phrases like 'well played' and 'nice one'."
+c57,Smooth and Youthful,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c58,Observations on Women,1,Other,0.5150,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c59,Smooth and Youthful,29,English Language Criticism,0.6770,1.0000,Comments criticizing or expressing frustration with the English language and its confusing rules.
+c6,Speeding and Traffic Stops,39,Woman's Reaction Analysis,0.5813,0.7500,"Comments analyzing a woman's behavior in a scene—her apology, misunderstanding, condescension, and eventual acceptance."
+c60,Smooth and Youthful,5,Other,0.6895,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
+c61,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c62,Positive Affirmations,45,Other,0.6571,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c63,Observations on Women,6,Critical Women Comments,0.6719,1.0000,"Derogatory comments attacking women as stupid, entitled, or problematic, using slurs and generalizations."
+c64,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c65,AI or Fake Content,30,Other,0.6566,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c66,Positive Affirmations,25,Generic Positive Reactions,0.7244,1.0000,"Brief positive comments like 'nice,' 'cute,' and compliments on photos/lighting."
+c67,Step-by-Step Instructions,1,Other,0.5150,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c68,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c69,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c7,Step-by-Step Instructions,49,Other,0.5639,0.2500,"LLM route-to-Other: supports=25%, mixed_flag=True."
+c70,Media Identification,32,Content Name Requests,0.7451,0.9000,Comments asking which movie is shown or discussing movie quality.
+c71,Media Identification,13,Only Happens in Movies,0.7078,1.0000,"Comments noting that the depicted scenario only occurs in fictional movies, not real life."
+c72,Personal Statements,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c73,Smooth and Youthful,4,Smooth Move Praise,0.7562,0.9000,"Comments emphasizing how smooth a particular action or line was, with 'that was smooth' as the core phrase."
+c74,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c75,Smooth and Youthful,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c76,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c77,Exclamations and Questions,54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c78,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c79,Positive Affirmations,31,Clever Move Praise,0.6529,0.9000,Comments praising someone's cleverness or smart execution of a line or action.
+c8,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c80,Observations on Women,9,Other,0.6008,0.4500,"LLM route-to-Other: supports=45%, mixed_flag=True."
+c81,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c82,Smooth and Youthful,4,Smooth Move Praise,0.7562,0.9000,"Comments emphasizing how smooth a particular action or line was, with 'that was smooth' as the core phrase."
+c83,Smooth and Youthful,0,Compliments on Gameplay,0.7062,0.9500,"Comments praising someone's performance or skill in a game, using phrases like 'well played' and 'nice one'."
+c84,Smooth and Youthful,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c85,Observations on Women,15,Rizz and Charm Praise,0.5926,0.7500,"Comments celebrating someone's charisma, flirting skill ('rizz'), or clever romantic timing."
+c86,Positive Affirmations,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c87,Personal Statements,1,Other,0.5150,0.4000,"LLM route-to-Other: supports=40%, mixed_flag=True."
+c88,Step-by-Step Instructions,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c89,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c9,Exclamations and Questions,33,Confusion Reactions,0.7770,0.9500,"Comments expressing confusion through question marks, emojis, or explicit statements of being confused."
+c90,Media Identification,-1,Other,0.0000,0.0000,HDBSCAN noise — not dense enough to form a cluster.
+c91,Positive Affirmations,51,Other,0.7598,0.1500,"LLM route-to-Other: supports=15%, mixed_flag=True."
+c92,AI or Fake Content,2,AI-Generated Content Identification,0.6491,0.8500,Comments identifying or debating whether the video content is AI-generated rather than real footage.
+c93,Wordplay on 'Knee',54,Kneed vs Need Wordplay,0.6689,0.8500,"Comments expressing confusion about whether the word is 'kneed,' 'need,' 'knead,' or discussing the homophone mix-up."
+c94,Wordplay on 'Knee',55,Kneed vs Need Wordplay,0.7836,1.0000,"Brief comments making puns or references involving the word 'knee' (knee grow, knee game, brain in knee)."
+c95,Wordplay on 'Knee',53,Kneed vs Need Wordplay,0.6938,1.0000,Comments joking about intentionally kneeing people as a flirting or social strategy.
+c96,Personal Statements,52,Kneed vs Need Wordplay,0.6553,0.8500,Comments making jokes or observations about the kneed/need wordplay in different contexts.
+c97,Smooth and Youthful,3,Smooth Move Praise,0.8047,0.9500,"Comments praising someone's smooth romantic or social move, often with variations of 'smooth' and emojis."
+c98,Media Identification,35,Content Name Requests,0.8012,1.0000,"Comments asking for the movie name, with one providing the answer (Orphan: First Kill)."
+c99,Smooth and Youthful,5,Other,0.6895,0.3500,"LLM route-to-Other: supports=35%, mixed_flag=True."
