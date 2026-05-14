@@ -24,22 +24,23 @@ python -m streamlit run analysis/dashboard.py --server.port=8789
 
 ## Pages
 
-- **Executive Summary** — one-pager with the headline finding, top metrics, and what-to-do panel
-- **The Two-Audience Problem** — side-by-side of the reach audience vs the intent audience, with sample comments
-- **Accounts — who to bet on** — account ranking with confidence tiers; calls out spam-contaminated accounts
-- **Themes — what works** — per-theme intent rates and view-lift, with explicit "thin sample" warnings
-- **Content Clusters** — the six latent groupings with example comments and theme breakdowns
-- **Data Quality & Caveats** — the page to read before quoting any finding
-- **Browse: raw numbers** — searchable tables for verification
+- **Overview** — the first-read story: reach worked, intent is under-measured, measurement needs cleanup
+- **Creator Performance** — reach vs intent buckets for deciding which accounts are leads vs bets
+- **Audience Signals** — simplified theme readout focused on what comments imply about watch intent
+- **Data Quality** — spam audit, caveats, and the backup details to read before quoting findings
 
-## Confidence legend
+## Decision language
 
-The dashboard uses a four-tier badge system on every claim:
+The simplified dashboard uses decision-oriented labels:
 
-- 🟢 **ROBUST** — hundreds of comments, stable across cuts
-- 🟡 **DIRECTIONAL** — real signal but thin sample (~10-30 comments)
-- 🔴 **THIN** — fewer than 10 comments, treat as a hypothesis
-- ⚫ **SPAM-CONTAMINATED** — finding disappeared after spam removal (called out for transparency)
+- **Use now** — stable enough to act on operationally
+- **Test next** — promising, but needs campaign #2 validation with more real comments
+- **Do not use** — contaminated, raw, or too thin for decisions
+
+The deeper creator page still shows sample-size and pattern badges so readers
+can distinguish a repeatable account pattern from a single strong post.
+The overview graph also fades videos with fewer than 3 real viewer comments,
+because their intent rates are not reliable enough to compare directly.
 
 ## Sharing it
 
