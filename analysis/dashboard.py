@@ -559,7 +559,7 @@ def _mini_scatter() -> None:
         )
         return
 
-    customdata = point.get("customdata") or []
+    customdata = list(point.get("customdata") or [])
     if len(customdata) < 6:
         st.caption(
             "Faint gray dots have fewer than 3 real comments; their intent "
@@ -567,12 +567,15 @@ def _mini_scatter() -> None:
         )
         return
 
-    _, url, profile, views, comments, intent = customdata
+    _, url, profile, views, comments, intent = customdata[:6]
+    views_text = f"{int(views):,}" if pd.notna(views) else "n/a"
+    comments_text = f"{int(comments):,}" if pd.notna(comments) else "n/a"
+    intent_text = f"{float(intent):.0%}" if pd.notna(intent) else "n/a"
     st.markdown(
         "**Selected video:** "
         f"{video_link(url, 'open source video')}  \n"
-        f"{profile} · {int(views):,} views · "
-        f"{int(comments):,} real comments · {float(intent):.0%} high-intent"
+        f"{profile} · {views_text} views · "
+        f"{comments_text} real comments · {intent_text} high-intent"
     )
 
 
