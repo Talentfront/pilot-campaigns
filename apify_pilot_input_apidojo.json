@@ -1,9 +1,0 @@
-{
-    "startUrls":  [
-                      "https://www.instagram.com/reel/DW20px2kiNY/",
-                      "https://www.instagram.com/reel/DW_x3ZrO2Wz/",
-                      "https://www.instagram.com/reel/DW34A7uCOwb/"
-                  ],
-    "continueOnDuplicates":  true,
-    "maxItems":  300
-}

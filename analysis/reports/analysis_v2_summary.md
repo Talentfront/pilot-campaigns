@@ -1,12 +1,12 @@
 # Pilot Analysis v2 — Accounts, Themes, Latent Clusters (cleaned + shrunk)
 
-Builds on the original [analysis_summary.md](../analysis_summary.md) in three passes:
+Builds on the original [analysis_summary.md](../../data/processed/analysis_summary.md) in three passes:
 
 1. **Join** comment NLP output with account/views/payout data.
 2. **Clean** — drop creator-posted spam (`is_created_by_media_owner`, cross-video duplicate long text, commenter-matches-creator-handle). See [filter_report.md](filter_report.md).
 3. **Shrink** — empirical-Bayes on per-video high-intent rates so tiny-n videos can't dominate the leaderboard.
 
-**Inputs:** `analysis_comment_level.csv` + `analysis_post_level.csv` (original NLP output) + `apify_full_results_datadoping.json` (raw scrape for the owner flag and usernames) + `All Clips.csv` (profile, views, engagement) + `submissions.csv` (payout).
+**Inputs:** `data/processed/analysis_comment_level.csv` + `data/processed/analysis_post_level.csv` (original NLP output) + `data/apify/apify_full_results_datadoping.json` (raw scrape for the owner flag and usernames) + `data/raw/Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv` (profile, views, engagement) + `data/raw/submissions - submissions.csv` (payout).
 
 **Workspace:** `analysis/pilot.duckdb`. Rebuild with `python analysis/run_analysis.py` — this also regenerates the filtered comment CSV.
 

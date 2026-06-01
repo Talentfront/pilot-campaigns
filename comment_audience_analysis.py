@@ -3,9 +3,9 @@
 Datadoping comment-level audience analysis pipeline.
 
 Outputs:
-- analysis_comment_level.csv
-- analysis_post_level.csv
-- analysis_summary.md
+- data/processed/analysis_comment_level.csv
+- data/processed/analysis_post_level.csv
+- data/processed/analysis_summary.md
 """
 
 from __future__ import annotations
@@ -25,16 +25,22 @@ from typing import Dict, List, Sequence, Tuple
 from urllib import error, request
 
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+APIFY_DIR = os.path.join(DATA_DIR, "apify")
+PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Comment-level audience analysis.")
     parser.add_argument(
         "--input-json",
-        default=r"C:\Users\shahe\Documents\pilot-campaigns\apify_full_results_datadoping.json",
+        default=os.path.join(APIFY_DIR, "apify_full_results_datadoping.json"),
         help="Path to input datadoping JSON file.",
     )
     parser.add_argument(
         "--output-dir",
-        default=r"C:\Users\shahe\Documents\pilot-campaigns",
+        default=PROCESSED_DIR,
         help="Directory for output artifacts.",
     )
     parser.add_argument("--min-confidence", type=float, default=0.55)

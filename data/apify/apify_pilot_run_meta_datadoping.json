@@ -1,0 +1,75 @@
+{
+    "data":  {
+                 "id":  "0pYkhLY5cfurZV3G5",
+                 "actId":  "shUXaQyLGCVuUYG36",
+                 "userId":  "arfkAmtHj3bOzLI6B",
+                 "startedAt":  "2026-04-13T19:38:26.098Z",
+                 "finishedAt":  null,
+                 "status":  "READY",
+                 "meta":  {
+                              "origin":  "API",
+                              "userAgent":  "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7920"
+                          },
+                 "stats":  {
+                               "inputBodyLen":  239,
+                               "migrationCount":  0,
+                               "rebootCount":  0,
+                               "restartCount":  0,
+                               "resurrectCount":  0,
+                               "computeUnits":  0
+                           },
+                 "options":  {
+                                 "build":  "latest",
+                                 "timeoutSecs":  36000,
+                                 "memoryMbytes":  128,
+                                 "maxItems":  27469,
+                                 "maxTotalChargeUsd":  35.71016,
+                                 "diskMbytes":  256
+                             },
+                 "buildId":  "obYekAHh3RLGbnNNR",
+                 "defaultKeyValueStoreId":  "Lp0LxeOl0lfQiHfou",
+                 "defaultDatasetId":  "YjQp3dw6L4ZOhC7Cs",
+                 "defaultRequestQueueId":  "jjSTchhEee44D5zsZ",
+                 "storageIds":  {
+                                    "keyValueStores":  {
+                                                           "default":  "Lp0LxeOl0lfQiHfou"
+                                                       },
+                                    "datasets":  {
+                                                     "default":  "YjQp3dw6L4ZOhC7Cs"
+                                                 },
+                                    "requestQueues":  {
+                                                          "default":  "jjSTchhEee44D5zsZ"
+                                                      }
+                                },
+                 "pricingInfo":  {
+                                     "pricingModel":  "PAY_PER_EVENT",
+                                     "createdAt":  "2026-02-16T15:05:28.857Z",
+                                     "startedAt":  "2026-02-16T15:05:28.857Z",
+                                     "apifyMarginPercentage":  0.2,
+                                     "isPriceChangeNotificationSuppressed":  true,
+                                     "reasonForChange":  "Migration from Pay Per Result to Pay Per Event with apify-default-dataset-item event",
+                                     "forceContainsSignificantPriceChange":  false,
+                                     "pricingPerEvent":  {
+                                                             "actorChargeEvents":  {
+                                                                                       "apify-default-dataset-item":  {
+                                                                                                                          "eventTitle":  "comment",
+                                                                                                                          "eventDescription":  "Single comment in the default dataset.",
+                                                                                                                          "isPrimaryEvent":  true,
+                                                                                                                          "eventPriceUsd":  0.0013
+                                                                                                                      }
+                                                                                   }
+                                                         }
+                                 },
+                 "chargedEventCounts":  {
+                                            "apify-default-dataset-item":  0
+                                        },
+                 "platformUsageBillingModel":  "DEVELOPER",
+                 "accountedChargedEventCounts":  {
+                                                     "apify-default-dataset-item":  0
+                                                 },
+                 "generalAccess":  "FOLLOW_USER_SETTING",
+                 "buildNumber":  "0.0.21",
+                 "containerUrl":  "https://ppkqghvovwem.runs.apify.net",
+                 "usageTotalUsd":  0
+             }
+}

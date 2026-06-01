@@ -6,6 +6,7 @@ wants to understand what runs, in what order, and why — without reading
 every script.
 
 For how to *run* the dashboard, see [DASHBOARD.md](DASHBOARD.md).
+For how the repo evolved into this pipeline, see [CHRONOLOGY.md](CHRONOLOGY.md).
 For methodology decisions and known limitations, see the bottom of this file.
 
 ---
@@ -28,7 +29,7 @@ CSVs + Apify scrape
 ├──────────────────────────────────────────────────────┤
 │ 5. Per-video rollup (winner_score, theme shares)     │
 └──────────────────────────────────────────────────────┘
-        │  analysis_comment_level.csv + analysis_post_level.csv
+        │  data/processed/analysis_comment_level.csv + data/processed/analysis_post_level.csv
         ▼
 ┌──────────────────────────────────────────────────────┐
 │ 6. Spam filter (3 rules, drops ~11% of rows)         │  build_filtered_comments.py
@@ -61,9 +62,9 @@ CSVs + Apify scrape
 
 **Sources.** Three things arrive outside the pipeline:
 
-1. **`Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv`** — the agency's campaign report. One row per clip: URL, profile, platform, views, likes, comments, shares, engagement rate, date. This is the *reach* data.
-2. **`submissions - submissions.csv`** — the submissions feed. URL, views, likes, payout in USD. This is the *money* data.
-3. **`apify_full_results_datadoping.json`** — Apify scrape of every video's comment section. One row per comment / reply / caption, with `text`, `username`, `comment_id`, `is_created_by_media_owner`, etc. This is the *voice* data.
+1. **`data/raw/Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv`** — the agency's campaign report. One row per clip: URL, profile, platform, views, likes, comments, shares, engagement rate, date. This is the *reach* data.
+2. **`data/raw/submissions - submissions.csv`** — the submissions feed. URL, views, likes, payout in USD. This is the *money* data.
+3. **`data/apify/apify_full_results_datadoping.json`** — Apify scrape of every video's comment section. One row per comment / reply / caption, with `text`, `username`, `comment_id`, `is_created_by_media_owner`, etc. This is the *voice* data.
 
 At this point we know who posted, who got views, who got paid — but nothing about what audiences said.
 
@@ -139,7 +140,7 @@ For each label, we average its seed embeddings into one *prototype vector* — t
 - `winner_score = high_rate - 0.5 * neg_or_conf_rate` — reward intent, penalize negativity (weighted half)
 - `top_theme_1/2/3` + shares
 
-**Outputs.** [analysis_comment_level.csv](../analysis_comment_level.csv) (per comment, with labels and theme), [analysis_post_level.csv](../analysis_post_level.csv) (per video), [analysis_summary.md](../analysis_summary.md) (human-readable winners / laggards / top themes from this first pass).
+**Outputs.** [analysis_comment_level.csv](../data/processed/analysis_comment_level.csv) (per comment, with labels and theme), [analysis_post_level.csv](../data/processed/analysis_post_level.csv) (per video), [analysis_summary.md](../data/processed/analysis_summary.md) (human-readable winners / laggards / top themes from this first pass).
 
 **This was the state of the pipeline on day one** — before anyone noticed the spam.
 
@@ -221,7 +222,7 @@ For each of the ~55 creator handles in the pilot, scrape their last ~30 non-pilo
 
 **Step 24 — charts.** SVGs for the dashboard and for external sharing: `account_winner_scores.svg`, `account_intent_shrunk.svg`, `intent_raw_vs_shrunk.svg`, `theme_intent_vs_viewlift.svg`.
 
-**Step 25 — filtered summary.** [write_filtered_summary.py](write_filtered_summary.py) regenerates a per-theme summary on the post-filter, post-relabel data. Output: [analysis_summary_filtered.md](analysis_summary_filtered.md). The pre-filter [analysis_summary.md](../analysis_summary.md) is kept on disk as an audit trail.
+**Step 25 — filtered summary.** [write_filtered_summary.py](write_filtered_summary.py) regenerates a per-theme summary on the post-filter, post-relabel data. Output: [analysis_summary_filtered.md](reports/analysis_summary_filtered.md). The pre-filter [analysis_summary.md](../data/processed/analysis_summary.md) is kept on disk as an audit trail.
 
 ---
 

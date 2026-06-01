@@ -1,0 +1,144 @@
+{
+    "data":  {
+                 "id":  "shUXaQyLGCVuUYG36",
+                 "userId":  "Ljbg5np9QD27bbgv3",
+                 "name":  "instagram-comments-and-replies-scraper",
+                 "username":  "datadoping",
+                 "description":  "This scraper will help you scrape comments without the need of cookie or your session id.\n\nIt is able to scrape replies from all users (not just owner\u0027s reply).\n\nIt is able to scrape subscribers if there badge is turned on.\n\nThis is a paid scraper so scraping is limited for freemium users.",
+                 "isPublic":  true,
+                 "createdAt":  "2025-09-20T06:52:34.308Z",
+                 "modifiedAt":  "2026-04-04T15:43:49.881Z",
+                 "taggedBuilds":  {
+                                      "latest":  {
+                                                     "buildId":  "obYekAHh3RLGbnNNR",
+                                                     "finishedAt":  "2026-04-04T15:43:49.881Z",
+                                                     "buildNumberInt":  21,
+                                                     "buildNumber":  "0.0.21"
+                                                 }
+                                  },
+                 "stats":  {
+                               "totalBuilds":  21,
+                               "totalRuns":  32547,
+                               "totalUsers":  301,
+                               "totalUsers7Days":  14,
+                               "totalUsers30Days":  51,
+                               "totalUsers90Days":  114,
+                               "lastRunStartedAt":  "2026-04-13T18:12:58.163Z",
+                               "publicActorRunStats30Days":  {
+                                                                 "ABORTED":  24,
+                                                                 "FAILED":  0,
+                                                                 "SUCCEEDED":  21649,
+                                                                 "TIMED-OUT":  2,
+                                                                 "TOTAL":  21675
+                                                             },
+                               "actorReviewCount":  5,
+                               "actorReviewRating":  3.936325988623819,
+                               "bookmarkCount":  13
+                           },
+                 "versions":  [
+                                  {
+                                      "versionNumber":  "0.0",
+                                      "sourceType":  "GIT_REPO",
+                                      "buildTag":  "latest"
+                                  }
+                              ],
+                 "defaultRunOptions":  {
+                                           "build":  "latest",
+                                           "timeoutSecs":  36000,
+                                           "memoryMbytes":  128,
+                                           "maxItems":  null,
+                                           "maxTotalChargeUsd":  null
+                                       },
+                 "exampleRunInput":  {
+                                         "body":  "{ \"helloWorld\": 123 }",
+                                         "contentType":  "application/json; charset=utf-8"
+                                     },
+                 "categories":  [
+                                    "SOCIAL_MEDIA",
+                                    "LEAD_GENERATION",
+                                    "AUTOMATION"
+                                ],
+                 "isDeprecated":  false,
+                 "title":  "Instagram Comments, Replies and Subscribers Scraper (No Cookie)",
+                 "pictureUrl":  "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/Ljbg5np9QD27bbgv3-actor-shUXaQyLGCVuUYG36-E2L8zigTgL-ig-comment.jpg",
+                 "seoTitle":  null,
+                 "seoDescription":  null,
+                 "pricingInfos":  [
+                                      {
+                                          "tieredPricing":  {
+                                                                "FREE":  {
+                                                                             "tieredPricePerUnitUsd":  0.00155
+                                                                         },
+                                                                "BRONZE":  {
+                                                                               "tieredPricePerUnitUsd":  0.0014
+                                                                           },
+                                                                "SILVER":  {
+                                                                               "tieredPricePerUnitUsd":  0.0013
+                                                                           },
+                                                                "GOLD":  {
+                                                                             "tieredPricePerUnitUsd":  0.0012
+                                                                         },
+                                                                "PLATINUM":  {
+                                                                                 "tieredPricePerUnitUsd":  0.0012
+                                                                             },
+                                                                "DIAMOND":  {
+                                                                                "tieredPricePerUnitUsd":  0.0012
+                                                                            }
+                                                            },
+                                          "unitName":  "comments",
+                                          "pricingModel":  "PRICE_PER_DATASET_ITEM",
+                                          "isPriceChangeNotificationSuppressed":  false,
+                                          "createdAt":  "2025-09-20T09:11:54.603Z",
+                                          "startedAt":  "2025-09-20T09:11:54.603Z",
+                                          "apifyMarginPercentage":  0.2
+                                      },
+                                      {
+                                          "pricingModel":  "PAY_PER_EVENT",
+                                          "createdAt":  "2026-02-16T15:05:28.857Z",
+                                          "startedAt":  "2026-02-16T15:05:28.857Z",
+                                          "apifyMarginPercentage":  0.2,
+                                          "isPriceChangeNotificationSuppressed":  true,
+                                          "reasonForChange":  "Migration from Pay Per Result to Pay Per Event with apify-default-dataset-item event",
+                                          "pricingPerEvent":  {
+                                                                  "actorChargeEvents":  {
+                                                                                            "apify-default-dataset-item":  {
+                                                                                                                               "eventTitle":  "comment",
+                                                                                                                               "eventDescription":  "Single comment in the default dataset.",
+                                                                                                                               "isPrimaryEvent":  true,
+                                                                                                                               "eventTieredPricingUsd":  {
+                                                                                                                                                             "FREE":  {
+                                                                                                                                                                          "tieredEventPriceUsd":  0.00155
+                                                                                                                                                                      },
+                                                                                                                                                             "BRONZE":  {
+                                                                                                                                                                            "tieredEventPriceUsd":  0.0014
+                                                                                                                                                                        },
+                                                                                                                                                             "SILVER":  {
+                                                                                                                                                                            "tieredEventPriceUsd":  0.0013
+                                                                                                                                                                        },
+                                                                                                                                                             "GOLD":  {
+                                                                                                                                                                          "tieredEventPriceUsd":  0.0012
+                                                                                                                                                                      },
+                                                                                                                                                             "PLATINUM":  {
+                                                                                                                                                                              "tieredEventPriceUsd":  0.0012
+                                                                                                                                                                          },
+                                                                                                                                                             "DIAMOND":  {
+                                                                                                                                                                             "tieredEventPriceUsd":  0.0012
+                                                                                                                                                                         }
+                                                                                                                                                         }
+                                                                                                                           }
+                                                                                        }
+                                                              },
+                                          "forceContainsSignificantPriceChange":  false
+                                      }
+                                  ],
+                 "notice":  "NONE",
+                 "isCritical":  false,
+                 "isGeneric":  false,
+                 "hasNoDataset":  false,
+                 "isSourceCodeHidden":  true,
+                 "standbyUrl":  null,
+                 "actorPermissionLevel":  "FULL_PERMISSIONS",
+                 "readmeSummary":  "## Instagram Comments \u0026 Replies Scraper (No Cookie)\n\nA scraper for harvesting Instagram post comments and comment replies without requiring cookies or session IDs; designed for large-scale collection of publicly visible comment data. The Actor extracts comment text, author information, timestamps, engagement metrics, content type and identifiers, and associates items with the source post; it supports optional crawling of reply threads, sorting by recent or popular comments, and high-throughput operation via rate limiting and concurrent requests to enable scalable comment harvesting and metadata extraction in JSON format for downstream analysis.\n\n## Use cases\n\n- Collect large-scale Instagram post comments (bulk scraping up to tens of thousands of comments per post).\n- Extract replies to comments to reconstruct conversation threads and comment hierarchies.\n- Obtain comment datasets sorted by recency or popularity for relevance-based analysis.\n- Support analytics workflows for developers, marketers, and analysts who need reliable comment metadata for social listening, engagement analysis, or research.",
+                 "deploymentKey":  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUs4uGvSdIghNCkPNNQ83qqWFetn+cbK+MGz59mEtDvEQ7hFSqrB4Ft24evYH7Dzb99tliNpC7adNLgwxQSI3vAUEads9h4cQb2sHsUvPoijgOxb2lhK7lu81HoE4wXA6VNLd9M3+9UKwmEuKhhAlpG7y3ApYNb9DAkba1PBMypmIYtXQ2KGepPtPUHS6xa3kpelrh9XjRCyv6FSaBT9tGgdUXiMUx7QkIqz3l8w1POmnoX5xvaof/oXcTUCIK5MK7M+a6DJfzByv2PkRFgAMTEG2dEi1RDx/hf/81+y+9C2ULqamtQsUNurm3GEAS457aLUiIUVzn1tFPEAQl9fGN \n"
+             }
+}

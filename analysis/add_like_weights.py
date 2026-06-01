@@ -29,7 +29,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = Path(__file__).resolve().parent
-APIFY_JSON = PROJECT_ROOT / "apify_full_results_datadoping.json"
+APIFY_JSON = PROJECT_ROOT / "data" / "apify" / "apify_full_results_datadoping.json"
 FILTERED_CSV = ANALYSIS_DIR / "analysis_comment_level_filtered.csv"
 OUT_CSV = ANALYSIS_DIR / "analysis_comment_level_filtered_weighted.csv"
 

@@ -1,6 +1,6 @@
-"""Regenerate analysis_summary.md from the post-filter, post-relabel data.
+"""Regenerate analysis_summary_filtered.md from the post-filter, post-relabel data.
 
-The original analysis_summary.md (in the project root) was written by
+The original data/processed/analysis_summary.md was written by
 comment_audience_analysis.py on the raw Apify scrape, before the spam
 filter was built. This script produces a replacement that:
   - reads the filtered comment CSV (821 surviving rows)
@@ -28,7 +28,7 @@ ANALYSIS_DIR = Path(__file__).resolve().parent
 FILTERED_PATH = ANALYSIS_DIR / "analysis_comment_level_filtered.csv"
 RELABEL_PATH = ANALYSIS_DIR / "theme_relabel_mapping.csv"
 RECLUSTER_PATH = ANALYSIS_DIR / "canonical_reclustered.csv"
-ORIGINAL_LABELED_PATH = PROJECT_ROOT / "analysis_comment_level.csv"
+ORIGINAL_LABELED_PATH = PROJECT_ROOT / "data" / "processed" / "analysis_comment_level.csv"
 OUT_PATH = ANALYSIS_DIR / "reports" / "analysis_summary_filtered.md"
 
 MIN_ROWS_PER_POST = 5
@@ -228,7 +228,7 @@ def header_note() -> list[str]:
         "> **Provenance.** Regenerated from `analysis_comment_level_filtered.csv` "
         "(post-spam-filter) and `theme_relabel_mapping.csv` (post-audit). "
         "No new embeddings, no new LLM calls. The original pre-filter "
-        "`analysis_summary.md` is retained in the project root as an audit "
+        "`data/processed/analysis_summary.md` is retained as an audit "
         "trail of how the creator-self-spam contamination was discovered.",
         "",
         "> **What changed vs the original.** "

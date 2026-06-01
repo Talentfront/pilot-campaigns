@@ -8,6 +8,8 @@ to re-run the pipeline.
 For living documentation, see the analysis/ parent directory:
 
 - [PIPELINE.md](../PIPELINE.md) — what the current pipeline does, step by step
+- [CHRONOLOGY.md](../CHRONOLOGY.md) - how the repo evolved and which artifacts
+  are current vs. historical
 - [DASHBOARD.md](../DASHBOARD.md) — how to run the Streamlit dashboard
 - [THEME_METHODOLOGY.md](../THEME_METHODOLOGY.md) — iteration history and
   design choices for theme discovery
@@ -30,7 +32,7 @@ For living documentation, see the analysis/ parent directory:
   `dashboard.py` reads it directly to render the Data Quality page.
 - [../cluster_profile.md](../cluster_profile.md) stays in `analysis/` for
   the same reason (surfaced on the Content Clusters page).
-- [../../analysis_summary.md](../../analysis_summary.md) (project root) is
+- [../../data/processed/analysis_summary.md](../../data/processed/analysis_summary.md) is
   the original pre-filter k-means summary — kept as an audit trail of what
   the pipeline looked like before spam was discovered.
 

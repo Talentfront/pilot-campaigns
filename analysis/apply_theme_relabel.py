@@ -2,7 +2,7 @@
 
 What this rewrites:
   - analysis/analysis_comment_level_filtered.csv: theme_human_label column
-  - analysis_post_level.csv: top_theme_1/2/3 columns
+  - data/processed/analysis_post_level.csv: top_theme_1/2/3 columns
   - analysis/pilot.duckdb: rebuilt from the CSVs via build_workspace.sql so
     v_videos.top_theme_* and raw_comments.theme_human_label stay consistent
   - analysis/theme_rollup.csv: regenerated inline so downstream charts pick up
@@ -29,10 +29,11 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = Path(__file__).resolve().parent
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
 MAPPING_PATH = ANALYSIS_DIR / "theme_relabel_mapping.csv"
 COMMENT_CSV = ANALYSIS_DIR / "analysis_comment_level_filtered.csv"
-POST_CSV = PROJECT_ROOT / "analysis_post_level.csv"
+POST_CSV = PROCESSED_DIR / "analysis_post_level.csv"
 DB_PATH = ANALYSIS_DIR / "pilot.duckdb"
 BUILD_SQL = ANALYSIS_DIR / "build_workspace.sql"
 ROLLUP_PATH = ANALYSIS_DIR / "theme_rollup.csv"

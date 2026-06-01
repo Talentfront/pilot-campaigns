@@ -20,7 +20,7 @@ import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 ANALYSIS_DIR = REPO_ROOT / "analysis"
-CLIPS_CSV = REPO_ROOT / "Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv"
+CLIPS_CSV = REPO_ROOT / "data" / "raw" / "Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv"
 RAW_CSV = ANALYSIS_DIR / "account_baselines_raw.csv"
 OUT_CSV = ANALYSIS_DIR / "account_baselines.csv"
 

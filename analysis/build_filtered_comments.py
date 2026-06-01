@@ -29,10 +29,14 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = Path(__file__).resolve().parent
+DATA_DIR = PROJECT_ROOT / "data"
+RAW_DIR = DATA_DIR / "raw"
+APIFY_DIR = DATA_DIR / "apify"
+PROCESSED_DIR = DATA_DIR / "processed"
 
-LABELED_PATH = PROJECT_ROOT / "analysis_comment_level.csv"
-RAW_PATH = PROJECT_ROOT / "apify_full_results_datadoping.json"
-CLIPS_PATH = PROJECT_ROOT / (
+LABELED_PATH = PROCESSED_DIR / "analysis_comment_level.csv"
+RAW_PATH = APIFY_DIR / "apify_full_results_datadoping.json"
+CLIPS_PATH = RAW_DIR / (
     "Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv"
 )
 

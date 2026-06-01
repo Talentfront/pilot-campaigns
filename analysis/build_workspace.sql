@@ -1,5 +1,5 @@
 -- Pilot-campaigns DuckDB workspace
--- Builds views over the raw CSVs in the project root.
+-- Builds views over the raw CSVs under data/.
 -- Run: duckdb analysis/pilot.duckdb -f analysis/build_workspace.sql
 
 -- ---------------------------------------------------------------------------
@@ -36,7 +36,7 @@ SELECT
     "Date Submitted"                    AS date_submitted,
     "URL"                               AS url
 FROM read_csv_auto(
-    'Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv',
+    'data/raw/Viral_Micro_Dramas_campaign_report_2026-04-13.xlsx - All Clips.csv',
     header = true
 )
 WHERE "URL" IS NOT NULL;
@@ -63,7 +63,7 @@ SELECT
     TRY_CAST(replace("Payout", '$', '') AS DOUBLE) AS payout_usd,
     "Date"                              AS submitted_date,
     "URL"                               AS url
-FROM read_csv_auto('submissions - submissions.csv', header = true);
+FROM read_csv_auto('data/raw/submissions - submissions.csv', header = true);
 
 -- Points at the filtered labeled CSV produced by build_filtered_comments.py.
 -- That script drops creator-posted spam (owner flag, cross-video duplicate
@@ -115,7 +115,7 @@ SELECT
     top_theme_share_2                   AS top_theme_share_2_orig,
     top_theme_share_3                   AS top_theme_share_3_orig,
     winner_score
-FROM read_csv_auto('analysis_post_level.csv', header = true);
+FROM read_csv_auto('data/processed/analysis_post_level.csv', header = true);
 
 -- Per-post rates recomputed from the filtered comment-level data. Used
 -- alongside raw_posts so the v_videos master view can expose both original
