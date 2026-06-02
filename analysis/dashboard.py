@@ -10,6 +10,7 @@ produced by  python analysis/run_analysis.py  (must be run first).
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import duckdb
@@ -25,6 +26,10 @@ import streamlit as st
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ANALYSIS_DIR = Path(__file__).resolve().parent
 DB_PATH = ANALYSIS_DIR / "pilot.duckdb"
+
+# DuckDB resolves the CSV paths embedded in pilot.duckdb relative to the
+# process cwd. Streamlit Cloud may launch this file from analysis/, so pin cwd.
+os.chdir(PROJECT_ROOT)
 
 # Shareability gate. Not cryptographically secure — just keeps the URL
 # from being trivially scrapable when the dashboard is hosted.
