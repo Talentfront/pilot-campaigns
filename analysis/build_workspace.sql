@@ -18,11 +18,23 @@ CREATE OR REPLACE MACRO extract_handle(profile_url) AS (
     lower(regexp_extract(profile_url, '([^/]+)/?$', 1))
 );
 
+-- When converting CSV-backed raw views into materialized tables, drop existing
+-- views first. Future rebuilds can then use CREATE OR REPLACE TABLE normally.
+DROP VIEW IF EXISTS v_join_gaps;
+DROP VIEW IF EXISTS v_video_themes;
+DROP VIEW IF EXISTS v_videos;
+DROP VIEW IF EXISTS post_rates_filtered;
+DROP VIEW IF EXISTS raw_posts;
+DROP VIEW IF EXISTS raw_comments;
+DROP VIEW IF EXISTS raw_submissions;
+DROP VIEW IF EXISTS raw_apify_owners;
+DROP VIEW IF EXISTS raw_clips;
+
 -- ---------------------------------------------------------------------------
--- Raw views over CSVs
+-- Raw tables loaded from CSVs
 -- ---------------------------------------------------------------------------
 
-CREATE OR REPLACE VIEW raw_clips AS
+CREATE OR REPLACE TABLE raw_clips AS
 SELECT
     extract_post_id("URL")              AS post_id,
     extract_handle("Profile")           AS profile,
@@ -45,14 +57,14 @@ WHERE "URL" IS NOT NULL;
 -- by build_filtered_comments.py. Used to backfill the ~12 videos that are
 -- in the submissions feed + Apify scrape but missing from All Clips —
 -- those are same-tier paid creators tracked in a different spreadsheet.
-CREATE OR REPLACE VIEW raw_apify_owners AS
+CREATE OR REPLACE TABLE raw_apify_owners AS
 SELECT
     extract_post_id(input_url)          AS post_id,
     lower(username)                     AS profile,
     full_name                           AS profile_full_name
 FROM read_csv_auto('analysis/apify_post_owners.csv', header = true);
 
-CREATE OR REPLACE VIEW raw_submissions AS
+CREATE OR REPLACE TABLE raw_submissions AS
 SELECT
     extract_post_id("URL")              AS post_id,
     "Platform"                          AS platform,
@@ -69,7 +81,7 @@ FROM read_csv_auto('data/raw/submissions - submissions.csv', header = true);
 -- That script drops creator-posted spam (owner flag, cross-video duplicate
 -- long text, and commenter-matches-creator-handle). Fall back to the raw
 -- labeled CSV only if the filtered one is absent.
-CREATE OR REPLACE VIEW raw_comments AS
+CREATE OR REPLACE TABLE raw_comments AS
 SELECT
     extract_post_id(input_url)          AS post_id,
     input_url,
@@ -95,7 +107,7 @@ FROM read_csv_auto('analysis/analysis_comment_level_filtered.csv', header = true
 -- to re-derive it incorrectly. Downstream queries that need *filtered*
 -- per-post rates (pooled high-intent, theme share) should compute them
 -- from raw_comments directly, which already points at the filtered CSV.
-CREATE OR REPLACE VIEW raw_posts AS
+CREATE OR REPLACE TABLE raw_posts AS
 SELECT
     extract_post_id(input_url)          AS post_id,
     input_url,
